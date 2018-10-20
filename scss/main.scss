@@ -166,6 +166,7 @@ main {
   &:hover {
     background: $secondary-color;
     color: set-text-color($secondary-color);
+    @include easeOut
   }
 }
 
@@ -187,6 +188,32 @@ main {
   background: darken($primary-color, 10);
   color: set-text-color($primary-color);
   height: 60px;
+}
+
+#dronebug-img{
+  height:300px;
+  width:400px;
+}
+
+.bio-image {
+  height:300px;
+  width: 300px;
+}
+
+#studio1{
+  height:250px;
+  width:250px;
+}
+
+#studio2{
+  height:250px;
+  width:250px;
+}
+
+.job{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 @import 'mobile';

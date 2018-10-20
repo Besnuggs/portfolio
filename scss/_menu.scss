@@ -91,7 +91,9 @@
     .portrait {
       width: 250px;
       height: 250px;
-      background: url('../dist/img/Posing\ with\ Poe.jpg');
+      background: url('https://media.licdn.com/dms/image/C5603AQG2uEvfAKJVmw/profile-displayphoto-shrink_200_200/0?e=1545264000&v=beta&t=YsDuDTNrtJilabb8tyH6HmMmfWwRY_ENNSCQkjleYOA');
+      background-size: cover;
+      background-repeat: no-repeat;
       border-radius: 50%;
       border: solid 3px $secondary-color;
     }
