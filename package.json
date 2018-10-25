@@ -9,6 +9,7 @@
   "author": "Brady Snuggs",
   "license": "ISC",
   "dependencies": {
-    "node-sass": "^4.9.4"
+    "node-sass": "^4.9.4",
+    "particlesjs": "^2.2.3"
   }
 }

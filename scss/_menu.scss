@@ -41,7 +41,7 @@
 
 // Menu Overlay
 .menu {
-  position: fixed;
+  position: relative;
   top: 0;
   width: 100%;
   opacity: 0.9;
@@ -91,8 +91,9 @@
     .portrait {
       width: 250px;
       height: 250px;
-      background: url('https://media.licdn.com/dms/image/C5603AQG2uEvfAKJVmw/profile-displayphoto-shrink_200_200/0?e=1545264000&v=beta&t=YsDuDTNrtJilabb8tyH6HmMmfWwRY_ENNSCQkjleYOA');
+      background: url('https://s3.amazonaws.com/bradypersonal/Posing+with+Poe.jpg');
       background-size: cover;
+      background-position: center;
       background-repeat: no-repeat;
       border-radius: 50%;
       border: solid 3px $secondary-color;
@@ -131,7 +132,7 @@
 }
 
 // Delay each nav item slide by 0.1s
-@for $x from 1 through 4 {
+@for $x from 1 through 5 {
   .nav-item:nth-child(#{$x}) {
     transition-delay: $x * 0.1s;
   }

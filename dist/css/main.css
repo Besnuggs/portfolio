@@ -22,7 +22,7 @@
       transform: rotate(-45deg) translate(6px, -6px); }
 
 .menu {
-  position: fixed;
+  position: relative;
   top: 0;
   width: 100%;
   opacity: 0.9;
@@ -41,14 +41,14 @@
   .menu-nav {
     margin: 0;
     padding: 0;
-    background: #373737;
+    background: #253f3f;
     list-style: none;
     transform: translate3d(0, -100%, 0);
     transition: all 0.5s ease-out; }
     .menu-nav.show {
       transform: translate3d(0, 0, 0); }
   .menu-branding {
-    background: #444;
+    background: #2F4F4F;
     transform: translate3d(0, 100%, 0);
     transition: all 0.5s ease-out; }
     .menu-branding.show {
@@ -56,18 +56,19 @@
     .menu-branding .portrait {
       width: 250px;
       height: 250px;
-      background: url("https://media.licdn.com/dms/image/C5603AQG2uEvfAKJVmw/profile-displayphoto-shrink_200_200/0?e=1545264000&v=beta&t=YsDuDTNrtJilabb8tyH6HmMmfWwRY_ENNSCQkjleYOA");
+      background: url("https://s3.amazonaws.com/bradypersonal/Posing+with+Poe.jpg");
       background-size: cover;
+      background-position: center;
       background-repeat: no-repeat;
       border-radius: 50%;
-      border: solid 3px #eece1a; }
+      border: solid 3px #778899; }
   .menu .nav-item {
     transform: translate3d(600px, 0, 0);
     transition: all 0.5s ease-out; }
     .menu .nav-item.show {
       transform: translate3d(0, 0, 0); }
     .menu .nav-item.current > a {
-      color: #eece1a; }
+      color: #778899; }
   .menu .nav-link {
     display: inline-block;
     position: relative;
@@ -79,7 +80,7 @@
     text-decoration: none;
     transition: all 0.5s ease-out; }
     .menu .nav-link:hover {
-      color: #eece1a; }
+      color: #778899; }
 
 .nav-item:nth-child(1) {
   transition-delay: 0.1s; }
@@ -93,18 +94,20 @@
 .nav-item:nth-child(4) {
   transition-delay: 0.4s; }
 
+.nav-item:nth-child(5) {
+  transition-delay: 0.5s; }
+
 * {
   box-sizing: border-box; }
 
 body {
-  background: #444;
+  background: #2F4F4F;
   color: #fff;
   height: 100%;
   margin: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5; }
   body#bg-img {
-    background: url(../img/background.jpg);
     background-attachment: fixed;
     background-size: cover; }
     body#bg-img:after {
@@ -115,7 +118,12 @@ body {
       width: 100%;
       height: 100%;
       z-index: -1;
-      background: rgba(68, 68, 68, 0.9); }
+      background: rgba(47, 79, 79, 0.9); }
+
+#home {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
 
 h1,
 h2,
@@ -131,7 +139,7 @@ h3 {
   h3.sm-heading {
     margin-bottom: 2rem;
     padding: 0.2rem 1rem;
-    background: rgba(73, 73, 73, 0.5); }
+    background: rgba(51, 85, 85, 0.5); }
 
 a {
   color: #fff;
@@ -143,17 +151,18 @@ header {
   width: 100%; }
 
 .text-secondary {
-  color: #eece1a; }
+  color: #778899; }
 
 main {
   padding: 4rem;
   min-height: calc(100vh - 60px); }
   main .icons {
-    margin-top: 1rem; }
+    margin-top: 1rem;
+    z-index: 2; }
     main .icons a {
       padding: 0.4rem; }
       main .icons a:hover {
-        color: #eece1a;
+        color: #778899;
         transition: all 0.5s ease-out; }
   main#home {
     overflow: hidden; }
@@ -169,7 +178,7 @@ main {
     grid-area: bioimage;
     margin: auto;
     border-radius: 50%;
-    border: #eece1a 3px solid; }
+    border: #778899 3px solid; }
   .about-info .bio {
     grid-area: bio;
     font-size: 1.5rem; }
@@ -180,9 +189,12 @@ main {
   .about-info .job-3 {
     grid-area: job3; }
   .about-info .job {
-    background: #515151;
+    background: #395f5f;
     padding: 0.5rem;
-    border-bottom: #eece1a 5px solid; }
+    border-bottom: #778899 5px solid;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
 
 .projects {
   display: grid;
@@ -193,7 +205,19 @@ main {
     border: 3px #fff solid; }
     .projects img:hover {
       opacity: 0.5;
-      border-color: #eece1a;
+      border-color: #778899;
+      transition: all 0.5s ease-out; }
+
+.skills {
+  display: grid;
+  grid-gap: 0.7rem;
+  grid-template-columns: repeat(3, 1fr); }
+  .skills img {
+    width: 100%;
+    border: 3px #fff solid; }
+    .skills img:hover {
+      opacity: 0.5;
+      border-color: #778899;
       transition: all 0.5s ease-out; }
 
 .boxes {
@@ -210,7 +234,7 @@ main {
     transition: all 0.5s ease-out; }
     .boxes div:hover {
       padding: 0.5rem 1.5rem;
-      background: #eece1a;
+      background: #778899;
       color: #000; }
       .boxes div:hover span {
         color: #000; }
@@ -221,7 +245,7 @@ main {
   border: 0;
   margin-bottom: 0.3rem; }
   .btn:hover, .btn-dark:hover, .btn-light:hover {
-    background: #eece1a;
+    background: #778899;
     color: #000;
     transition: all 0.5s ease-out; }
 
@@ -230,19 +254,19 @@ main {
   color: #fff; }
 
 .btn-light {
-  background: #c4c4c4;
+  background: #aecfcf;
   color: #333; }
 
 #main-footer {
   text-align: center;
   padding: 1rem;
-  background: #2b2b2b;
+  background: #1c2f2f;
   color: #fff;
   height: 60px; }
 
 #dronebug-img {
   height: 300px;
-  width: 400px; }
+  width: 450px; }
 
 .bio-image {
   height: 300px;
@@ -256,10 +280,11 @@ main {
   height: 250px;
   width: 250px; }
 
-.job {
-  display: flex;
-  flex-direction: column;
-  align-items: center; }
+#particles-js canvas {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  z-index: 6; }
 
 @media screen and (min-width: 1171px) {
   .projects {
