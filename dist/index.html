@@ -10,9 +10,9 @@
   <title>Brady Snuggs Portfolio</title>
 </head>
 
-<div class="particles-canvas" id="particles-js">
+
 <body id="bg-img">
-  <header>
+  <header id="particles-js">
     <div class="menu-btn">
       <div class="btn-line"></div>
       <div class="btn-line"></div>
@@ -61,19 +61,17 @@
     <h2 class="sm-heading">
      Full Stack Web Developer
     </h2>
-    <div class="icons">
-      <a href="https://www.linkedin.com/in/bradysnuggs/" target="_blank">
-        <i class="fab fa-linkedin fa-2x"></i>
-      </a>
-      <a href="https://github.com/Besnuggs" target="_blank">
-        <i class="fab fa-github fa-2x"></i>
-      </a>
-    </div>
   </main>
 
+
   <script src="js/main.js"></script>
-  <script type="text/javascript" src="js/particles.js"></script>
-  <script type="text/javascript" src="js/app.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+  <script>
+  particlesJS.load('particles-js','particles.json', function(){
+    console.log('particles.json loaded...')
+  })
+  </script>
 </body>
 </div>
 

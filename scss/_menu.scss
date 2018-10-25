@@ -27,13 +27,12 @@
 
       // Line 2 - Hide
       &:nth-child(2) {
-        transform: rotate(405deg);
         opacity: 0;
       }
 
       // Line 3 - Rotate
       &:nth-child(3) {
-        transform: rotate(-45deg) translate(6px, -6px);
+        transform: rotate(-45deg) translate(7px, -6px);
       }
     }
   }
@@ -41,7 +40,7 @@
 
 // Menu Overlay
 .menu {
-  position: relative;
+  position: fixed;
   top: 0;
   width: 100%;
   opacity: 0.9;
@@ -91,10 +90,9 @@
     .portrait {
       width: 250px;
       height: 250px;
-      background: url('https://s3.amazonaws.com/bradypersonal/Posing+with+Poe.jpg');
-      background-size: cover;
+      background: url('https://s3.amazonaws.com/bradypersonal/Posing+with+Poe.jpg') no-repeat;
       background-position: center;
-      background-repeat: no-repeat;
+      background-size: cover;
       border-radius: 50%;
       border: solid 3px $secondary-color;
     }

@@ -16,13 +16,12 @@
     .menu-btn.close .btn-line:nth-child(1) {
       transform: rotate(45deg) translate(5px, 5px); }
     .menu-btn.close .btn-line:nth-child(2) {
-      transform: rotate(405deg);
       opacity: 0; }
     .menu-btn.close .btn-line:nth-child(3) {
-      transform: rotate(-45deg) translate(6px, -6px); }
+      transform: rotate(-45deg) translate(7px, -6px); }
 
 .menu {
-  position: relative;
+  position: fixed;
   top: 0;
   width: 100%;
   opacity: 0.9;
@@ -56,10 +55,9 @@
     .menu-branding .portrait {
       width: 250px;
       height: 250px;
-      background: url("https://s3.amazonaws.com/bradypersonal/Posing+with+Poe.jpg");
-      background-size: cover;
+      background: url("https://s3.amazonaws.com/bradypersonal/Posing+with+Poe.jpg") no-repeat;
       background-position: center;
-      background-repeat: no-repeat;
+      background-size: cover;
       border-radius: 50%;
       border: solid 3px #778899; }
   .menu .nav-item {
@@ -101,6 +99,7 @@
   box-sizing: border-box; }
 
 body {
+  text-align: center;
   background: #2F4F4F;
   color: #fff;
   height: 100%;
@@ -119,11 +118,6 @@ body {
       height: 100%;
       z-index: -1;
       background: rgba(47, 79, 79, 0.9); }
-
-#home {
-  display: flex;
-  flex-direction: column;
-  align-items: center; }
 
 h1,
 h2,
@@ -158,7 +152,7 @@ main {
   min-height: calc(100vh - 60px); }
   main .icons {
     margin-top: 1rem;
-    z-index: 2; }
+    z-index: 2000; }
     main .icons a {
       padding: 0.4rem; }
       main .icons a:hover {
@@ -191,10 +185,7 @@ main {
   .about-info .job {
     background: #395f5f;
     padding: 0.5rem;
-    border-bottom: #778899 5px solid;
-    display: flex;
-    flex-direction: column;
-    align-items: center; }
+    border-bottom: #778899 5px solid; }
 
 .projects {
   display: grid;
@@ -204,18 +195,6 @@ main {
     width: 100%;
     border: 3px #fff solid; }
     .projects img:hover {
-      opacity: 0.5;
-      border-color: #778899;
-      transition: all 0.5s ease-out; }
-
-.skills {
-  display: grid;
-  grid-gap: 0.7rem;
-  grid-template-columns: repeat(3, 1fr); }
-  .skills img {
-    width: 100%;
-    border: 3px #fff solid; }
-    .skills img:hover {
       opacity: 0.5;
       border-color: #778899;
       transition: all 0.5s ease-out; }
@@ -246,8 +225,7 @@ main {
   margin-bottom: 0.3rem; }
   .btn:hover, .btn-dark:hover, .btn-light:hover {
     background: #778899;
-    color: #000;
-    transition: all 0.5s ease-out; }
+    color: #000; }
 
 .btn-dark {
   background: black;
@@ -279,12 +257,6 @@ main {
 #studio2 {
   height: 250px;
   width: 250px; }
-
-#particles-js canvas {
-  position: absolute;
-  width: 100vw;
-  height: 100vh;
-  z-index: 6; }
 
 @media screen and (min-width: 1171px) {
   .projects {
