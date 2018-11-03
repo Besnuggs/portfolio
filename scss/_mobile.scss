@@ -90,4 +90,8 @@
   .projects {
     grid-template-columns: 1fr;
   }
+
+  .skills{
+    flex-direction: column;
+  }
 }

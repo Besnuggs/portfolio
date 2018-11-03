@@ -263,6 +263,15 @@ main {
   height: 250px;
   width: 400px; }
 
+.skills {
+  display: flex;
+  flex-wrap: wrap; }
+
+.item {
+  flex: 1 0 21%;
+  margin: 5px;
+  height: 200px; }
+
 @media screen and (min-width: 1171px) {
   .projects {
     grid-template-columns: repeat(4, 1fr); } }
@@ -316,4 +325,6 @@ main {
       margin-top: 1rem;
       font-size: 5rem; }
   .projects {
-    grid-template-columns: 1fr; } }
+    grid-template-columns: 1fr; }
+  .skills {
+    flex-direction: column; } }
