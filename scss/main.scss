@@ -80,7 +80,7 @@ main {
   display: grid;
   grid-gap: 30px;
   grid-template-areas:
-    'bioimage bio bio'
+    'bio1 bioimage bio2'
     'job1 job2 job3';
   grid-template-columns: repeat(3, 1fr);
 
@@ -91,9 +91,12 @@ main {
     border: $secondary-color 3px solid;
   }
 
-  .bio {
-    grid-area: bio;
-    font-size: 1.5rem;
+  .bio1 {
+    grid-area: bio1;
+  }
+  
+  .bio2 {
+    grid-area: bio2;
   }
 
   .job-1 {
@@ -209,6 +212,11 @@ main {
 #studio2{
   height:250px;
   width:250px;
+}
+
+#portfolioHome{
+  height:250px;
+  width:400px;
 }
 
 

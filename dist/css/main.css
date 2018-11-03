@@ -166,16 +166,17 @@ main {
 .about-info {
   display: grid;
   grid-gap: 30px;
-  grid-template-areas: 'bioimage bio bio' 'job1 job2 job3';
+  grid-template-areas: 'bio1 bioimage bio2' 'job1 job2 job3';
   grid-template-columns: repeat(3, 1fr); }
   .about-info .bio-image {
     grid-area: bioimage;
     margin: auto;
     border-radius: 50%;
     border: #778899 3px solid; }
-  .about-info .bio {
-    grid-area: bio;
-    font-size: 1.5rem; }
+  .about-info .bio1 {
+    grid-area: bio1; }
+  .about-info .bio2 {
+    grid-area: bio2; }
   .about-info .job-1 {
     grid-area: job1; }
   .about-info .job-2 {
@@ -258,6 +259,10 @@ main {
   height: 250px;
   width: 250px; }
 
+#portfolioHome {
+  height: 250px;
+  width: 400px; }
+
 @media screen and (min-width: 1171px) {
   .projects {
     grid-template-columns: repeat(4, 1fr); } }
@@ -289,11 +294,15 @@ main {
     height: 25vh;
     transform: translate3d(100%, 0, 0); }
     .menu-branding .portrait {
-      background: url("../img/portrait_small.jpg");
+      background: url("https://s3.amazonaws.com/bradypersonal/Posing+with+Poe.jpg") no-repeat;
+      background-position: center;
+      background-size: cover;
       width: 150px;
-      height: 150px; }
+      height: 150px;
+      border-radius: 50%;
+      border: solid 3px #778899; }
   .about-info {
-    grid-template-areas: 'bioimage' 'bio' 'job1' 'job2' 'job3';
+    grid-template-areas: 'bio1' 'bioimage' 'bio2' 'job1' 'job2' 'job3';
     grid-template-columns: 1fr; }
   .projects {
     grid-template-columns: repeat(2, 1fr); } }
