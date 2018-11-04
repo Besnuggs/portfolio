@@ -200,7 +200,8 @@ main {
 .projects {
   display: grid;
   grid-gap: 0.7rem;
-  grid-template-columns: repeat(3, 1fr); }
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas: "project1 project2 project3 project4"; }
   .projects img {
     width: 100%;
     border: 3px #fff solid; }
@@ -211,6 +212,10 @@ main {
   .projects .project {
     display: flex;
     flex-direction: column; }
+  .projects .project2 {
+    grid-area: project2; }
+  .projects .project3 {
+    grid-area: project3; }
 
 .project-description {
   display: flex; }
@@ -365,7 +370,8 @@ main {
       margin-top: 1rem;
       font-size: 5rem; }
   .projects {
-    grid-template-columns: 1fr; }
+    grid-template-columns: 1fr;
+    grid-template-areas: 'project1' 'project2' 'project3' 'project4'; }
   .skills {
     flex-direction: column; }
   #studio1 {
