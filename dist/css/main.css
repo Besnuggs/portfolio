@@ -147,6 +147,15 @@ header {
 .text-secondary {
   color: #778899; }
 
+.boxes {
+  display: flex;
+  flex-direction: column; }
+
+.contact-box {
+  display: flex;
+  align-content: center;
+  flex-direction: column; }
+
 main {
   padding: 4rem;
   min-height: calc(100vh - 60px); }
