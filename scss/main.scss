@@ -133,6 +133,8 @@ main {
   display: grid;
   grid-gap: 0.7rem;
   grid-template-columns: repeat(3, 1fr);
+  
+  
 
   img {
     width: 100%;
@@ -145,12 +147,20 @@ main {
     }
   }
 
-  
+  .project{
+    display:flex;
+    flex-direction: column;
+  }
 }
 
 .project-description{
-  background: $secondary-color;
   display: flex;
+}
+
+.description{
+  flex: 1;
+  padding: 1em;
+  border: solid;
 }
 
 // Contact Page
