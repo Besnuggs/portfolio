@@ -226,7 +226,8 @@ main {
   margin-bottom: 0.3rem; }
   .btn:hover, .btn-dark:hover, .btn-light:hover {
     background: #778899;
-    color: #000; }
+    color: #000;
+    transition: all 0.5s ease-out; }
 
 .btn-dark {
   background: black;
@@ -271,6 +272,25 @@ main {
   flex: 1 0 21%;
   margin: 5px;
   height: 200px; }
+
+.item img {
+  width: 152px;
+  height: 139px; }
+
+#RESTAPI {
+  width: 172px;
+  height: 141px; }
+
+#Express {
+  width: 200px;
+  height: 139px; }
+
+#TreeHouse {
+  width: 200px;
+  height: 200px; }
+
+.project-video {
+  width: 100%; }
 
 @media screen and (min-width: 1171px) {
   .projects {
@@ -327,4 +347,17 @@ main {
   .projects {
     grid-template-columns: 1fr; }
   .skills {
+    flex-direction: column; }
+  #studio1 {
+    height: 150px;
+    width: 150px; }
+  #studio2 {
+    height: 150px;
+    width: 150px; }
+  #dronebug-img {
+    height: 150px;
+    width: 250px; }
+  .contact-box {
+    display: flex;
+    align-content: center;
     flex-direction: column; } }

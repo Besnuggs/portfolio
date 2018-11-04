@@ -134,6 +134,8 @@ main {
       @include easeOut;
     }
   }
+
+  
 }
 
 // Contact Page
@@ -171,6 +173,7 @@ main {
   &:hover {
     background: $secondary-color;
     color: set-text-color($secondary-color);
+    @include easeOut()
   }
 }
 
@@ -230,5 +233,28 @@ main {
   height: 200px;
 }
 
+.item img{
+  width:152px;
+  height:139px;
+}
+
+#RESTAPI{
+  width:172px;
+  height:141px;
+}
+
+#Express{
+  width:200px;
+  height:139px;
+}
+
+#TreeHouse{
+  width:200px;
+  height:200px;
+}
+
+.project-video{
+  width:100%;
+}
 
 @import 'mobile';

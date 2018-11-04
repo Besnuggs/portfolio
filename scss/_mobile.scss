@@ -94,4 +94,24 @@
   .skills{
     flex-direction: column;
   }
+
+  #studio1{
+    height:150px;
+    width:150px;
+  }
+  #studio2{
+    height:150px;
+    width:150px;
+  }
+
+  #dronebug-img{
+    height:150px;
+    width:250px;
+  }
+
+  .contact-box{
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+  }
 }
