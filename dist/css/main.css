@@ -317,6 +317,9 @@ main {
 .project-video {
   width: 100%; }
 
+#particles-js {
+  height: 100%; }
+
 @media screen and (min-width: 1171px) {
   .projects {
     grid-template-columns: repeat(4, 1fr); } }
