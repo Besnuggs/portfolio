@@ -320,6 +320,10 @@ main {
 #particles-js {
   height: 100%; }
 
+.description {
+  font-size: 21px;
+  padding: 2px; }
+
 @media screen and (min-width: 1171px) {
   .projects {
     grid-template-columns: repeat(4, 1fr); } }
