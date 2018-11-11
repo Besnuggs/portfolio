@@ -320,27 +320,17 @@ main {
   font-size: 21px;
   padding: 2px; }
 
-.carousel {
-  width: 100%; }
-
-.carousel-cell {
-  width: 100%;
-  height: 100%;
-  border-radius: 5px;
-  counter-increment: carousel-cell; }
-
-/* cell number */
-.carousel-cell:before {
-  text-align: center;
-  content: counter(carousel-cell); }
-
 @media screen and (min-width: 1171px) and (orientation: portrait) {
   .projects {
     grid-template-columns: repeat(4, 1fr); } }
 
 @media screen and (min-width: 769px) and (max-width: 1170px) and (orientation: portrait) {
   .projects {
-    grid-template-columns: repeat(3, 1fr); } }
+    grid-template-columns: repeat(3, 1fr); }
+  .boxes div {
+    width: 50vw; }
+  .contact-box {
+    width: 20px; } }
 
 @media screen and (max-width: 768px) and (orientation: portrait) {
   main {
@@ -378,7 +368,9 @@ main {
   .job {
     margin-left: -17px; }
   .projects {
-    grid-template-columns: repeat(2, 1fr); } }
+    grid-template-columns: repeat(2, 1fr); }
+  .boxes div {
+    width: 50%; } }
 
 @media screen and (max-width: 768px) and (orientation: landscape) {
   menu .menu-nav {
@@ -399,6 +391,12 @@ main {
     width: 95%; }
   .projects {
     width: 100%; } }
+
+.boxes div {
+  width: 75%; }
+
+.boxes div #email {
+  margin-left: -27px; }
 
 .contact-box {
   display: flex;
@@ -435,6 +433,8 @@ main {
   #dronebug-img {
     height: 150px;
     width: 250px; }
+  .boxes div {
+    width: 100%; }
   .contact-box {
     display: flex;
     align-content: center;

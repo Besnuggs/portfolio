@@ -217,6 +217,7 @@ justify-content: center;
   height: 60px;
 }
 
+//about
 #dronebug-img{
   height:300px;
   width:450px;
@@ -242,6 +243,7 @@ justify-content: center;
   width:400px;
 }
 
+//skills
 .skills{
   display: flex;
   flex-wrap: wrap;
@@ -284,25 +286,6 @@ justify-content: center;
 .description{
   font-size: 21px;
   padding: 2px;
-}
-
-//flickity
-.carousel {
-  width: 100%
-}
-
-.carousel-cell {
-  width: 100%;
-  height: 100%;
-
-  border-radius: 5px;
-  counter-increment: carousel-cell;
-}
-
-/* cell number */
-.carousel-cell:before {
-  text-align: center;
-  content: counter(carousel-cell);
 }
 
 

@@ -10,6 +10,15 @@
   .projects {
     grid-template-columns: repeat(3, 1fr);
   }
+
+ .boxes div{
+   width: 50vw;
+ }
+
+ .contact-box{
+   width: 20px;
+ }
+
 }
 
 // Tablets & Small Laptops
@@ -75,6 +84,10 @@
   .projects {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .boxes div{
+    width: 50%;
+  }
 }
 
 @include mediaMdLandScape{
@@ -127,6 +140,14 @@
   }
   
   //contact
+  .boxes div{
+    width: 75%;
+  }
+
+  .boxes div #email{
+    margin-left: -27px;
+  }
+
   .contact-box{
     display: flex;
     align-content: center;
@@ -186,6 +207,10 @@
   }
 
   //contact
+.boxes div{
+  width: 100%;
+}
+
   .contact-box{
     display: flex;
     align-content: center;
