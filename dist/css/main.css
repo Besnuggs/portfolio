@@ -388,8 +388,8 @@ main {
       font-size: 5rem; }
   #project-section {
     width: 100vw;
-    position: absolute;
-    left: 0; }
+    position: relative;
+    margin-left: -32px; }
   .projects {
     width: 100%; }
   .skills {
