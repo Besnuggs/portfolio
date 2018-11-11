@@ -129,38 +129,22 @@ main {
 }
 
 // Work/Projects
+#project-section {
+display: flex;
+justify-content: center;
+}
+
 .projects {
-  display: grid;
-  grid-gap: 0.7rem;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-areas:
-  "project1 project2 project3 project4";
-  
-  
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
 
-  img {
-    width: 100%;
-    border: 3px #fff solid;
-
-    &:hover {
-      opacity: 0.5;
-      border-color: $secondary-color;
-      @include easeOut;
-    }
-  }
-
-  .project{
-    display:flex;
-    flex-direction: column;
-  }
-
-  .project2{
-    grid-area: project2;
-  }
-
-  .project3{
-    grid-area: project3;
-  }
+.project{
+ display: flex;
+ flex-direction: column;
+ align-content: center;
+ margin: 5px;
 }
 
 .project-description{
@@ -298,7 +282,27 @@ main {
 
 .description{
   font-size: 21px;
-  padding: 2px
+  padding: 2px;
 }
+
+//flickity
+.carousel {
+  width: 100%
+}
+
+.carousel-cell {
+  width: 100%;
+  height: 100%;
+
+  border-radius: 5px;
+  counter-increment: carousel-cell;
+}
+
+/* cell number */
+.carousel-cell:before {
+  text-align: center;
+  content: counter(carousel-cell);
+}
+
 
 @import 'mobile';
