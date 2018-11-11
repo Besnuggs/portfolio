@@ -68,6 +68,15 @@
     grid-template-columns: 1fr;
   }
 
+  .skills{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .project{
+    width: 80vw;
+    margin-left: -135px;
+  }
 
   .job{
     margin-left: -17px;
