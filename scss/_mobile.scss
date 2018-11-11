@@ -88,12 +88,7 @@
   }
 
   .projects {
-    grid-template-columns: 1fr;
-    grid-template-areas:
-    'project1'
-    'project2'
-    'project3'
-    'project4';
+    width:100%;
   }
 
   .skills{
