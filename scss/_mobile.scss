@@ -78,6 +78,17 @@
 }
 
 @include mediaMdLandScape{
+   menu
+  .menu-nav{
+  display: flex;
+  flex-direction: column;
+}
+
+  .nav-link{
+    height: 12px;
+  }
+
+
   //index
   #home{
    height: 100vh
@@ -191,4 +202,3 @@
     font-size: 20px;
   }
 }
-

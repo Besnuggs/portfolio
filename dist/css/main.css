@@ -381,6 +381,11 @@ main {
     grid-template-columns: repeat(2, 1fr); } }
 
 @media screen and (max-width: 768px) and (orientation: landscape) {
+  menu .menu-nav {
+    display: flex;
+    flex-direction: column; }
+  .nav-link {
+    height: 12px; }
   #home {
     height: 100vh; }
   #title {
