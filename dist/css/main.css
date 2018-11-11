@@ -386,6 +386,10 @@ main {
     main .lg-heading {
       margin-top: 1rem;
       font-size: 5rem; }
+  #project-section {
+    width: 100vw;
+    position: absolute;
+    left: 0; }
   .projects {
     width: 100%; }
   .skills {
