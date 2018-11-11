@@ -77,6 +77,56 @@
   }
 }
 
+@include mediaMdLandScape{
+  //index
+  #home{
+   height: 100vh
+  }
+  
+  #title{
+    margin-top: -140px;
+  }
+  
+  //about
+  .about-info {
+    grid-template-areas:
+      'bio1'
+      'bioimage'
+      'bio2'
+      'job1'
+      'job2'
+      'job3';
+  
+    grid-template-columns: 1fr;
+  }
+  
+  .projects {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  
+  //skills
+   .skills #RESTAPI{
+     width: 95%;
+   }
+  
+    .projects {
+      width:100%;
+    }
+  }
+  
+  //contact
+  .contact-box{
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    width: 90vw;
+  }
+  
+  #email{
+    font-size: 25px;
+    margin-left:  -22px;
+  }
 
 
 // Smartphones
@@ -133,60 +183,12 @@
   }
 
   #email{
-    font-size: 25px;
+    font-size: 20px;
     margin-left:  -22px;
   }
-}
 
-@include mediaMdLandScape{
-//index
-#home{
- position: relative;
-}
-
-#title{
-  position: absolute;
-  top: 30px;
-  left: 42px;
-}
-
-//about
-.about-info {
-  grid-template-areas:
-    'bio1'
-    'bioimage'
-    'bio2'
-    'job1'
-    'job2'
-    'job3';
-
-  grid-template-columns: 1fr;
-}
-
-.projects {
-  grid-template-columns: repeat(2, 1fr);
-}
-
-
-//skills
- .skills #RESTAPI{
-   width: 95%;
- }
-
-  .projects {
-    width:100%;
+  #phone{
+    font-size: 20px;
   }
 }
 
-//contact
-.contact-box{
-  display: flex;
-  align-content: center;
-  flex-direction: column;
-  width: 90vw;
-}
-
-#email{
-  font-size: 25px;
-  margin-left:  -22px;
-}

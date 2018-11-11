@@ -380,6 +380,31 @@ main {
   .projects {
     grid-template-columns: repeat(2, 1fr); } }
 
+@media screen and (max-width: 768px) and (orientation: landscape) {
+  #home {
+    height: 100vh; }
+  #title {
+    margin-top: -140px; }
+  .about-info {
+    grid-template-areas: 'bio1' 'bioimage' 'bio2' 'job1' 'job2' 'job3';
+    grid-template-columns: 1fr; }
+  .projects {
+    grid-template-columns: repeat(2, 1fr); }
+  .skills #RESTAPI {
+    width: 95%; }
+  .projects {
+    width: 100%; } }
+
+.contact-box {
+  display: flex;
+  align-content: center;
+  flex-direction: column;
+  width: 90vw; }
+
+#email {
+  font-size: 25px;
+  margin-left: -22px; }
+
 @media screen and (max-width: 500px) and (orientation: portrait) {
   main {
     padding: 2rem; }
@@ -411,32 +436,7 @@ main {
     flex-direction: column;
     width: 90vw; }
   #email {
-    font-size: 25px;
-    margin-left: -22px; } }
-
-@media screen and (max-width: 768px) and (orientation: landscape) {
-  #home {
-    position: relative; }
-  #title {
-    position: absolute;
-    top: 30px;
-    left: 42px; }
-  .about-info {
-    grid-template-areas: 'bio1' 'bioimage' 'bio2' 'job1' 'job2' 'job3';
-    grid-template-columns: 1fr; }
-  .projects {
-    grid-template-columns: repeat(2, 1fr); }
-  .skills #RESTAPI {
-    width: 95%; }
-  .projects {
-    width: 100%; } }
-
-.contact-box {
-  display: flex;
-  align-content: center;
-  flex-direction: column;
-  width: 90vw; }
-
-#email {
-  font-size: 25px;
-  margin-left: -22px; }
+    font-size: 20px;
+    margin-left: -22px; }
+  #phone {
+    font-size: 20px; } }
