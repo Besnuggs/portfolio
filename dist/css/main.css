@@ -439,6 +439,8 @@ main {
     width: 100%; }
   .skills {
     flex-direction: column; }
+  #postgreSQL, #Redux, #RESTAPI {
+    width: 85%; }
   #studio1 {
     height: 150px;
     width: 150px; }

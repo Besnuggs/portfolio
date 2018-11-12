@@ -131,7 +131,7 @@
 
   //contact
 
-  
+
 }
 
 @include mediaMdLandScape{
@@ -233,6 +233,10 @@
   //skills
   .skills{
     flex-direction: column;
+  }
+
+  #postgreSQL, #Redux, #RESTAPI{
+    width: 85%;
   }
 
   //about
