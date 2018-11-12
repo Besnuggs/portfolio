@@ -68,6 +68,12 @@ $background-opacity: 0.9;
   }
 }
 
+@mixin mediaLgLandScape {
+  @media screen and (min-width: 769px) and (max-width: 1170px) and (orientation: landscape) {
+    @content;
+  }
+}
+
 @mixin mediaXl {
   @media screen and (min-width: 1171px) and (orientation: portrait) {
     @content;
