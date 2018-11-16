@@ -44,6 +44,22 @@
     margin-top: -80px;
   }
 
+  //about
+  #studio1{
+    height:350px;
+    width:550px;
+  }
+  #studio2{
+    height:350px;
+    width:550px;
+  }
+
+  #dronebug-img{
+    height:350px;
+    width:550px;
+  }
+
+
 }
 
 // Tablets & Small Laptops
@@ -99,6 +115,7 @@
   width:99%;
 }
 
+
 //about
   .about-info {
     grid-template-areas:
@@ -115,6 +132,8 @@
   .job{
     margin-left: -17px;
   }
+
+  
 
   //work
   .projects {
@@ -254,6 +273,7 @@
     width:250px;
   }
 
+    
   //contact
 .boxes div{
   width: 100%;

@@ -339,7 +339,16 @@ main {
   .projects {
     width: 100%; }
   .lg-heading {
-    margin-top: -80px; } }
+    margin-top: -80px; }
+  #studio1 {
+    height: 350px;
+    width: 550px; }
+  #studio2 {
+    height: 350px;
+    width: 550px; }
+  #dronebug-img {
+    height: 350px;
+    width: 550px; } }
 
 @media screen and (max-width: 768px) and (orientation: portrait) {
   main {
