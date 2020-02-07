@@ -229,7 +229,15 @@ main {
 .description {
   flex: 1;
   padding: 1em;
-  border: solid; }
+  border: solid;
+  text-align: left;
+  text-indent: 1em;
+  font-size: 18px;
+  padding: 2px; }
+
+.project-video-features {
+  text-align: left;
+  text-indent: 1em; }
 
 .boxes {
   display: flex;
@@ -244,7 +252,6 @@ main {
     margin-bottom: 3rem;
     transition: all 0.5s ease-out; }
     .boxes div:hover {
-      padding: 0.5rem 1.5rem;
       background: #778899;
       color: #000; }
       .boxes div:hover span {
@@ -295,6 +302,14 @@ main {
   height: 250px;
   width: 400px; }
 
+.about-bullets {
+  text-align: left;
+  text-indent: 1em; }
+
+.about-descriptions {
+  text-align: left;
+  text-indent: 1em; }
+
 .skills {
   display: flex;
   flex-wrap: wrap; }
@@ -326,10 +341,6 @@ main {
 
 #particles-js {
   height: 100%; }
-
-.description {
-  font-size: 21px;
-  padding: 2px; }
 
 @media screen and (min-width: 1171px) and (orientation: portrait) {
   .projects {

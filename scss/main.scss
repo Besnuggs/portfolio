@@ -178,6 +178,15 @@ justify-content: center;
   flex: 1;
   padding: 1em;
   border: solid;
+  text-align: left;
+  text-indent: 1em;
+  font-size: 18px;
+  padding: 2px;
+}
+
+.project-video-features{
+  text-align: left;
+  text-indent: 1em;
 }
 
 // Contact Page
@@ -196,7 +205,6 @@ justify-content: center;
     @include easeOut;
 
     &:hover {
-      padding: 0.5rem 1.5rem;
       background: $secondary-color;
       color: set-text-color($secondary-color);
       span {
@@ -265,6 +273,16 @@ justify-content: center;
   width:400px;
 }
 
+.about-bullets{
+  text-align: left;
+  text-indent: 1em;
+}
+
+.about-descriptions{
+  text-align: left;
+  text-indent: 1em;
+}
+
 //skills
 .skills{
   display: flex;
@@ -304,11 +322,6 @@ justify-content: center;
 
 #particles-js{
   height: 100%;
-}
-
-.description{
-  font-size: 21px;
-  padding: 2px;
 }
 
 
