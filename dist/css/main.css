@@ -290,6 +290,10 @@ main {
   height: 300px;
   width: 300px; }
 
+#Bright-Bridge-Web {
+  height: 250px;
+  width: 250px; }
+
 #studio1 {
   height: 250px;
   width: 250px; }
@@ -361,6 +365,9 @@ main {
     width: 100%; }
   .lg-heading {
     margin-top: -80px; }
+  #Bright-Bridge-Web {
+    height: 350px;
+    width: 550px; }
   #studio1 {
     height: 350px;
     width: 550px; }
@@ -471,6 +478,9 @@ main {
     flex-direction: column; }
   #postgreSQL, #Redux, #RESTAPI {
     width: 85%; }
+  #Bright-Bridge-Web {
+    height: 150px;
+    width: 150px; }
   #studio1 {
     height: 150px;
     width: 150px; }
