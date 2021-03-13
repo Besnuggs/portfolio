@@ -11,61 +11,59 @@
     grid-template-columns: repeat(3, 1fr);
   }
 
- .boxes div{
-   width: 50vw;
- }
+  .boxes div {
+    width: 50vw;
+  }
 
- .contact-box{
-   width: 20px;
- }
+  .contact-box {
+    width: 20px;
+  }
 }
 
 @include mediaLgLandScape {
   //about
   .about-info {
     grid-template-areas:
-      'bio1'
-      'bioimage'
-      'bio2'
-      'job1'
-      'job2'
-      'job3';
+      "bio1"
+      "bioimage"
+      "bio2"
+      "job1"
+      "job2"
+      "job3";
 
     grid-template-columns: 1fr;
   }
 
   //work
   .projects {
-    width:100%;
+    width: 100%;
   }
 
   //contact
-  .lg-heading{
+  .lg-heading {
     margin-top: -80px;
   }
 
   //about
-  #Bright-Bridge-Web{
-    height:350px;
-    width:550px;
+  #Bright-Bridge-Web {
+    height: 350px;
+    width: 550px;
   }
 
-  #studio1{
-    height:350px;
-    width:550px;
+  #studio1 {
+    height: 350px;
+    width: 550px;
   }
 
-  #studio2{
-    height:350px;
-    width:550px;
+  #studio2 {
+    height: 350px;
+    width: 550px;
   }
 
-  #dronebug-img{
-    height:350px;
-    width:550px;
+  #dronebug-img {
+    height: 350px;
+    width: 550px;
   }
-
-
 }
 
 // Tablets & Small Laptops
@@ -102,7 +100,8 @@
     transform: translate3d(100%, 0, 0);
 
     .portrait {
-      background: url('https://s3.amazonaws.com/bradypersonal/Posing+with+Poe.jpg') no-repeat;
+      background: url("https://s3.amazonaws.com/bradypersonal/Posing+with+Poe.jpg")
+        no-repeat;
       background-position: center;
       background-size: cover;
       width: 150px;
@@ -112,123 +111,116 @@
     }
   }
 
-//skills
-#postgreSQL,#Redux,#RESTAPI {
-  width: 95%;
-}
+  //skills
+  #postgreSQL,
+  #Redux,
+  #RESTAPI {
+    width: 95%;
+  }
 
-#Express{
-  width:99%;
-}
+  #Express {
+    width: 99%;
+  }
 
-
-//about
+  //about
   .about-info {
     grid-template-areas:
-      'bio1'
-      'bioimage'
-      'bio2'
-      'job1'
-      'job2'
-      'job3';
+      "bio1"
+      "bioimage"
+      "bio2"
+      "job1"
+      "job2"
+      "job3";
 
     grid-template-columns: 1fr;
   }
 
-  .job{
+  .job {
     margin-left: -17px;
   }
 
-  
-
   //work
   .projects {
-    width:100%;
+    width: 100%;
   }
 
   .projects {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .boxes div{
+  .boxes div {
     width: 50%;
   }
 
   //contact
-
-
 }
 
-@include mediaMdLandScape{
-   menu
-  .menu-nav{
-  display: flex;
-  flex-direction: column;
-}
+@include mediaMdLandScape {
+  menu .menu-nav {
+    display: flex;
+    flex-direction: column;
+  }
 
-  .nav-link{
+  .nav-link {
     height: 12px;
   }
 
-
   //index
-  #home{
-   height: 100vh
+  #home {
+    height: 100vh;
   }
-  
-  #title{
+
+  #title {
     margin-top: -140px;
   }
-  
+
   //about
   .about-info {
     grid-template-areas:
-      'bio1'
-      'bioimage'
-      'bio2'
-      'job1'
-      'job2'
-      'job3';
-  
+      "bio1"
+      "bioimage"
+      "bio2"
+      "job1"
+      "job2"
+      "job3";
+
     grid-template-columns: 1fr;
   }
-  
+
   .projects {
     grid-template-columns: repeat(2, 1fr);
   }
-  
-  
+
   //skills
-   .skills #RESTAPI{
-     width: 95%;
-   }
-  
-    .projects {
-      width:100%;
-    }
-  }
-  
-  //contact
-  .boxes div{
-    width: 75%;
+  .skills #RESTAPI {
+    width: 95%;
   }
 
-  .boxes div #email{
-    margin-left: -27px;
+  .projects {
+    width: 100%;
   }
+}
 
-  .contact-box{
-    display: flex;
-    align-content: center;
-    flex-direction: column;
-    width: 90vw;
-  }
-  
-  #email{
-    font-size: 25px;
-    margin-left:  -22px;
-  }
+//contact
+.boxes div {
+  width: 75%;
+}
 
+.boxes div #email {
+  margin-left: -27px;
+}
+
+.contact-box {
+  display: flex;
+  align-content: center;
+  flex-direction: column;
+  width: 90vw;
+}
+
+#email {
+  font-size: 25px;
+  margin-left: -22px;
+}
 
 // Smartphones
 @include mediaSm {
@@ -239,71 +231,72 @@
     }
 
     .lg-heading {
-      margin-top:1rem;
+      margin-top: 1rem;
       font-size: 5rem;
     }
   }
 
   //work
-  #project-section{
+  #project-section {
     width: 100vw;
     position: relative;
     margin-left: -32px;
   }
 
   .projects {
-    width:100%;
+    width: 100%;
   }
 
   //skills
-  .skills{
+  .skills {
     flex-direction: column;
   }
 
-  #postgreSQL, #Redux, #RESTAPI{
+  #postgreSQL,
+  #Redux,
+  #RESTAPI {
     width: 85%;
   }
 
   //about
-  #Bright-Bridge-Web{
+  #Bright-Bridge-Web {
     height: 150px;
     width: 150px;
   }
 
-  #studio1{
-    height:150px;
-    width:150px;
+  #studio1 {
+    height: 150px;
+    width: 150px;
   }
 
-  #studio2{
-    height:150px;
-    width:150px;
+  #studio2 {
+    height: 150px;
+    width: 150px;
   }
 
-  #dronebug-img{
-    height:150px;
-    width:250px;
+  #dronebug-img {
+    height: 150px;
+    width: 250px;
   }
 
-    
   //contact
-.boxes div{
-  width: 100%;
-}
+  .boxes div {
+    width: 100%;
+  }
 
-  .contact-box{
+  .contact-box {
     display: flex;
     align-content: center;
     flex-direction: column;
     width: 90vw;
   }
 
-  #email{
+  #email {
     font-size: 20px;
-    margin-left:  -22px;
+    margin-left: -22px;
   }
 
-  #phone{
+  #phone {
     font-size: 20px;
   }
 }

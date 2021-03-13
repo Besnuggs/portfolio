@@ -90,7 +90,8 @@
     .portrait {
       width: 250px;
       height: 250px;
-      background: url('https://s3.amazonaws.com/bradypersonal/Posing+with+Poe.jpg') no-repeat;
+      background: url("https://s3.amazonaws.com/bradypersonal/Posing+with+Poe.jpg")
+        no-repeat;
       background-position: center;
       background-size: cover;
       border-radius: 50%;

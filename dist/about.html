@@ -1,170 +1,262 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
-    crossorigin="anonymous">
-  <link rel="stylesheet" href="css/main.css">
-  <title>About Me</title>
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+      integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <title>About Me</title>
+  </head>
 
-<body>
-  <header>
-    <div class="menu-btn">
-      <div class="btn-line"></div>
-      <div class="btn-line"></div>
-      <div class="btn-line"></div>
-    </div>
-
-    <nav class="menu">
-      <div class="menu-branding">
-        <div class="portrait"></div>
+  <body>
+    <header>
+      <div class="menu-btn">
+        <div class="btn-line"></div>
+        <div class="btn-line"></div>
+        <div class="btn-line"></div>
       </div>
-      <ul class="menu-nav">
-        <li class="nav-item">
-          <a href="index.html" class="nav-link">
-            Home
-          </a>
-        </li>
-        <li class="nav-item current">
-          <a href="about.html" class="nav-link">
-            About
-          </a>
-        </li>
-        <li class="nav-item">
-            <a href="skills.html" class="nav-link">
-              Skills
-            </a>
-          </li>
-        <li class="nav-item">
-          <a href="work.html" class="nav-link">
-            Work
-          </a>
-        </li>
-        <li class="nav-item">
-          <a href="contact.html" class="nav-link">
-            Contact
-          </a>
-        </li>
-      </ul>
-    </nav>
-  </header>
 
-  <main id="about">
-    <h1 class="lg-heading">
-      About
-      <span class="text-secondary">Me</span>
-    </h1>
-    <h2 class="sm-heading">
-     Hello.
-    </h2>
-    <div class="about-info">
-      <div class="bio1"></div>
-      <img src="./img/PosingwithPoe.jpg" alt="Brady S Portrait" class="bio-image">
-      <div class="bio2"></div>
-      <!-- Jobs - Descriptions -->
-      <div class="job job-1">
-        <h3>Callforce</h3>
-        <h5>Full Stack Software Engineer</h5>
-        <h6>May, 2020</h6>
-        <p  class="about-descriptions">
-          <strong><a href='https://www.getcallforce.com/' target='_blank'>Callforce </a></strong> provides solutions for patient outreach, answering services and appointment handling, insurance verification, and other unique services to dental offices.  I worked alongside FANG-experienced engineers on internal tools, such as an employee console for handling appointments and a list-filtering software that would orgnanize patient records into csvs, for our callers to contact, as well as an external, client-facing portal for our customers to view appointments that required urgent attention.
-        </p>
-        <ul class="about-bullets">
-          <li>
-            Underwent HIPAA compliance training and am aware of security needed around patient-sensitive data.
+      <nav class="menu">
+        <div class="menu-branding">
+          <div class="portrait"></div>
+        </div>
+        <ul class="menu-nav">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link"> Home </a>
           </li>
-          <li>
-            Built an electron application that filtered millions of patient records based on shared phone numbers, and consolidated them into single records with the oldest patient serving as the primary call-recepient. This software would organize all patients from tens to hundreds of offices under a single umbrella company, a DSO, within a single XLSX file and output office-specific csvs with all patients consolidated to preclude multiple calls to the same phone number in a single execution. The effect of this software reduced operation overhead by dividing up our lists for teams to better manage, prevented multiple calls to the same patient, and provided better accountability for tracking which offices were receiving inadequate attention.
+          <li class="nav-item current">
+            <a href="about.html" class="nav-link"> About </a>
           </li>
-          <li>
-            Our online applications leveraged the firebase SDK and its nonSQL database; however, as indexes for sorting queries became fewer, we relied more heavily on Google's BigQuery firebase extension for exporting our data into SQL-tables. Consequently, I have a lot of experience writing cloud-functions (onRequests, onCalls, pubsubs, and etc.), writing queries for non-SQL as well as SQL databases, and 
+          <li class="nav-item">
+            <a href="skills.html" class="nav-link"> Skills </a>
           </li>
-          <li>
-           
+          <li class="nav-item">
+            <a href="work.html" class="nav-link"> Work </a>
+          </li>
+          <li class="nav-item">
+            <a href="contact.html" class="nav-link"> Contact </a>
           </li>
         </ul>
-          <div class="job-img-div">
-          <!-- <img src="./img/snugmusicstudio1.JPG" alt="Snug Music Lessons Studio #1" id="studio1">
-          <img src="./img/snugmusicstudio2.JPG" alt="Snug Music Lessons Studio #2" id="studio2"> -->
-        </div>
-      </div>
+      </nav>
+    </header>
 
-      <div class="job job-2">
-        <h3>Independent Contractor</h3>
-        <h5>React/WordPress Developer</h5>
-        <h6>Nov, 2019 to Nov, 2020</h6>
-        <p  class="about-descriptions"> I worked as a React developer on a map-editing tool for water inspectors leveraging the Konva library for shape building, and I also worked as a WordPress developer for retailconsultingteam and utahconservatives.</p>
+    <main id="about">
+      <h1 class="lg-heading">
+        About
+        <span class="text-secondary">Me</span>
+      </h1>
+      <h2 class="sm-heading">Hello.</h2>
+      <div class="about-info">
+        <div class="bio1"></div>
+        <img
+          src="./img/PosingwithPoe.jpg"
+          alt="Brady S Portrait"
+          class="bio-image"
+        />
+        <div class="bio2"></div>
+        <!-- Jobs - Descriptions -->
+        <div class="job job-1">
+          <h3>Callforce</h3>
+          <h5>Full Stack Software Engineer</h5>
+          <h6>May, 2020</h6>
+          <p class="about-descriptions">
+            <strong
+              ><a href="https://www.getcallforce.com/" target="_blank"
+                >Callforce
+              </a></strong
+            >
+            provides solutions for patient outreach, answering services and
+            appointment handling, insurance verification, and other unique
+            services to dental offices. I worked alongside FANG-experienced
+            engineers on internal tools, such as an employee console for
+            handling appointments and a list-filtering software that would
+            orgnanize patient records into csvs, for our callers to contact, as
+            well as an external, client-facing portal for our customers to view
+            appointments that required urgent attention.
+          </p>
           <ul class="about-bullets">
             <li>
-              Experience in cPanel, DNS updates, API service calls, GIT version control, hosting, file management, and creating sharp themes in WordPress using Divi.
+              Underwent HIPAA compliance training and am aware of security
+              needed around patient-sensitive data.
             </li>
             <li>
-              Update clients daily on requested features and any issues encountered, and implement technologies that best serve the project.
+              DSO (Dental Service Organization) List Filtering Electron
+              Application / non-DSO Office List Filtering Cloud-Functions
+              <ul>
+                <li>
+                  Built an electron application for DSOs that filtered, sorted,
+                  and consolidated millions of patient records based on shared
+                  phone numbers and outputed office-specific csvs.
+                </li>
+                <li>
+                  Built cloud-functions to support non-DSO dental office list
+                  filtering that returned csvs that would then be uploaded into
+                  the
+                  <strong><a href="https://www.five9.com/">five9</a></strong>
+                  queue for callers to work through.
+                </li>
+                <li>
+                  Patient records were consolidated to a single record based on
+                  phone number being shared.
+                </li>
+                <li>
+                  Filtered by either pediatric/non-pediatric requirements
+                  (age-ranges), if patient had medicare, if patient was overdue
+                  for an appointment (often over 6 months since last
+                  appointment), and etc.
+                </li>
+                <li>
+                  Sorted by age for conslidated patient records once groupings
+                  of shared phone numbers were identified.
+                </li>
+                <li>
+                  Multiple scenes constructed for sole office list handling
+                  within our internal console that supported many list uploads
+                  simultaneously. Lists would be uploaded, requested to a
+                  cloud-function to be sorted/filtered/consolidated, and would
+                  be filtered by utility functions specific to the PMS (Practice
+                  Management Software - e.g. Dentrix) that generated the patient
+                  list.
+                </li>
+                <li>
+                  Effect: Reduced operation overhead by supporting multiple
+                  lists filtering simultaneously, dividing DSO lists into
+                  office-level csvs for better accountability and handling among
+                  teams, prevented multiple calls on the same patient, and
+                  greatly sped up production of calls by eliminating filtering
+                  by hand.
+                </li>
+              </ul>
+            </li>
+            <li>Online Applications Built With React and Firebase</li>
+            <ul>
+              <li>
+                Have built many cloud-functions onRequest, onCall, pubsub, and
+                etc
+              </li>
+              <li>BigQuery</li>
+              <li>React latest practices</li>
+            </ul>
+          </ul>
+          <div class="job-img-div">
+            <!-- <img src="./img/snugmusicstudio1.JPG" alt="Snug Music Lessons Studio #1" id="studio1">
+          <img src="./img/snugmusicstudio2.JPG" alt="Snug Music Lessons Studio #2" id="studio2"> -->
+          </div>
+        </div>
+
+        <div class="job job-2">
+          <h3>Independent Contractor</h3>
+          <h5>React/WordPress Developer</h5>
+          <h6>Nov, 2019 to Nov, 2020</h6>
+          <p class="about-descriptions">
+            I worked as a React developer on a map-editing tool for water
+            inspectors leveraging the Konva library for shape building, and I
+            also worked as a WordPress developer for retailconsultingteam and
+            utahconservatives.
+          </p>
+          <ul class="about-bullets">
+            <li>
+              Experience in cPanel, DNS updates, API service calls, GIT version
+              control, hosting, file management, and creating sharp themes in
+              WordPress using Divi.
             </li>
             <li>
-              <a
-                href="https://retailconsultingteam.com"
-                target="_blank"
-              >
-              <strong>
-                Link to RetailConsultingTeam.
-              </strong>
+              Update clients daily on requested features and any issues
+              encountered, and implement technologies that best serve the
+              project.
+            </li>
+            <li>
+              <a href="https://retailconsultingteam.com" target="_blank">
+                <strong> Link to RetailConsultingTeam. </strong>
               </a>
             </li>
           </ul>
 
           <div class="job-img-div">
             <a href="https://teamtreehouse.com/bradysnuggs" target="_blank">
-            <img src="img/treehouse.png" alt="Team TreeHouse Icon and link to profile" id="TreeHouse"></a>
-          </div> 
-      </div>
+              <img
+                src="img/treehouse.png"
+                alt="Team TreeHouse Icon and link to profile"
+                id="TreeHouse"
+            /></a>
+          </div>
+        </div>
 
-      <div class="job job-3">
-        <h3>Bright Bridge Web</h3>
-        <h5>Project Manager && Full Stack Web Developer</h5>
-        <h6>Feb, 2019 to Nov, 2019</h6>
-        <p  class="about-descriptions">
-          As an employee at Bright Bridge, I largely worked as a frontend developer specializing in React. Some of the more notable projects I engineered include <a href="https://app.scripturenotes.com/" target="_blank"><strong>ScriptureNotes</strong></a> study tool (learn more at <a href="https://scripturenotes.com/" target="_blank"><strong>scripturenotes.com</strong></a>) and <a href="https://map.compliancego.com/site/d5155518-7941-11e9-bb29-02ec26f03c5a"><strong>ComplianceGo's Map Editor Tool</strong></a> (functionality will be greatly limited as a public user). I also managed development teams for <a href="https://iachievetoday.com" target="_blank"><strong>IAchieveToday</strong></a> and the <a href="https://www.eventbookingpro.com/" target="_blank"><strong>EventBookingPro</strong></a> app.
-        </p>
+        <div class="job job-3">
+          <h3>Bright Bridge Web</h3>
+          <h5>Project Manager && Full Stack Web Developer</h5>
+          <h6>Feb, 2019 to Nov, 2019</h6>
+          <p class="about-descriptions">
+            As an employee at Bright Bridge, I largely worked as a frontend
+            developer specializing in React. Some of the more notable projects I
+            engineered include
+            <a href="https://app.scripturenotes.com/" target="_blank"
+              ><strong>ScriptureNotes</strong></a
+            >
+            study tool (learn more at
+            <a href="https://scripturenotes.com/" target="_blank"
+              ><strong>scripturenotes.com</strong></a
+            >) and
+            <a
+              href="https://map.compliancego.com/site/d5155518-7941-11e9-bb29-02ec26f03c5a"
+              ><strong>ComplianceGo's Map Editor Tool</strong></a
+            >
+            (functionality will be greatly limited as a public user). I also
+            managed development teams for
+            <a href="https://iachievetoday.com" target="_blank"
+              ><strong>IAchieveToday</strong></a
+            >
+            and the
+            <a href="https://www.eventbookingpro.com/" target="_blank"
+              ><strong>EventBookingPro</strong></a
+            >
+            app.
+          </p>
           <ul class="about-bullets">
+            <li>Correspond with clients with daily updates.</li>
             <li>
-              Correspond with clients with daily updates.
+              Lead weekly standups with task lists and roadmaps, and give
+              directional advice on how to approach complex problems.
             </li>
             <li>
-              Lead weekly standups with task lists and roadmaps, and give directional advice on how to approach complex problems.
-            </li>
-            <li>
-              Keep progress on our weekly goals with end of week reports to share with our clients.
+              Keep progress on our weekly goals with end of week reports to
+              share with our clients.
             </li>
             <li>
               Prepare estimates for feature implementations and bug fixes.
             </li>
             <li>
-              Organize my teams in a way that play to my team members' strengths while offering room for them to improve upon their weaknesses.
+              Organize my teams in a way that play to my team members' strengths
+              while offering room for them to improve upon their weaknesses.
             </li>
             <li>
-               I have experience working on UIs and APIs in Django and React.js in Git version control, WordPress, React Native, as well as with working in older legacy code projects using SFTP. 
+              I have experience working on UIs and APIs in Django and React.js
+              in Git version control, WordPress, React Native, as well as with
+              working in older legacy code projects using SFTP.
             </li>
           </ul>
 
           <div class="job-img-div">
             <a href="http://www.brightbridgeweb.com/" target="_blank">
-              <img id="Bright-Bridge-Web" src="./img/BrightBridgeWeb.jpg" alt="Bright Bridge Web">
+              <img
+                id="Bright-Bridge-Web"
+                src="./img/BrightBridgeWeb.jpg"
+                alt="Bright Bridge Web"
+              />
             </a>
           </div>
-        
         </div>
-    </div>
-  </main>
+      </div>
+    </main>
 
-  <footer id="main-footer">
-    Copyright &copy; 2021
-  </footer>
+    <footer id="main-footer">Copyright &copy; 2021</footer>
 
-  <script src="js/main.js"></script>
-</body>
-
+    <script src="js/main.js"></script>
+  </body>
 </html>

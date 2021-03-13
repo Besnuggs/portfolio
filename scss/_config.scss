@@ -1,4 +1,4 @@
-$primary-color: #2F4F4F;
+$primary-color: #2f4f4f;
 $secondary-color: #778899;
 $show-home-image: true;
 $background-opacity: 0.9;
@@ -14,7 +14,7 @@ $background-opacity: 0.9;
       background-size: cover;
 
       &:after {
-        content: '';
+        content: "";
         position: absolute;
         top: 0;
         right: 0;
@@ -48,7 +48,6 @@ $background-opacity: 0.9;
     @content;
   }
 }
-
 
 @mixin mediaMd {
   @media screen and (max-width: 768px) and (orientation: portrait) {
