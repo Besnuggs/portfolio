@@ -1,253 +1,453 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+      integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <title>View My Work</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
-    crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-  <link rel="stylesheet" href="css/main.css">
-  <title>View My Work</title>
-</head>
-
-<body id="bg-img">
+  <body id="bg-img">
     <header>
       <div class="menu-btn">
         <div class="btn-line"></div>
         <div class="btn-line"></div>
         <div class="btn-line"></div>
       </div>
-  
+
       <nav class="menu">
         <div class="menu-branding">
           <div class="portrait"></div>
         </div>
         <ul class="menu-nav">
           <li class="nav-item">
-            <a href="index.html" class="nav-link">
-              Home
-            </a>
+            <a href="index.html" class="nav-link"> Home </a>
           </li>
           <li class="nav-item">
-            <a href="about.html" class="nav-link">
-              About
-            </a>
+            <a href="about.html" class="nav-link"> About </a>
           </li>
           <li class="nav-item">
-              <a href="skills.html" class="nav-link">
-                Skills
-              </a>
-            </li>
+            <a href="skills.html" class="nav-link"> Skills </a>
+          </li>
           <li class="nav-item current">
-            <a href="work.html" class="nav-link">
-              Projects
-            </a>
+            <a href="work.html" class="nav-link"> Projects </a>
           </li>
           <li class="nav-item">
-            <a href="contact.html" class="nav-link">
-              Contact
-            </a>
+            <a href="contact.html" class="nav-link"> Contact </a>
           </li>
         </ul>
       </nav>
     </header>
 
-  <main id="work">
-    <h1 class="lg-heading">
-      My
-      <span class="text-secondary">Work</span>
-    </h1>
-    <h2 class="sm-heading">
-    Personal and Group Projects:
-    </h2>
-    <section id="project-section">
-    <div class="projects">
-      <div class="project project1">
-        <h1>VR-Art-Gallery</h1>
-        <iframe id="vr-preview" src="https://vrartgallery.org/#/admin/Trailer/" allowfullscreen="yes"></iframe>
-        <div class="project-video-features">
-            <ul>
-              <li>Conditionally rendered textures, artwork, and music on a-frame entities based on user selections in gallery creation.</li>
-              <li>Virtual Reality environment was created with the following technologies: A-frame, aframe-react, aframe-extras, aframe-physics-system, aframe-room-component, aframe-star-system-component.</li>
-              <li>Secure user registration via Bcryptjs.</li>
-              <li>Features similar to a social networking site: favoriting galleries and sharing galleries publicly, or privatizing galleries that are accessible by link only.</li>
-              <li>Redux used as solution to runtime error in passing data to A-frame's asset management system.</li>
-              <li>react-dropzone, aws-sdk, uui, and attr-accept technologies were used for users to upload their images as either gallery thumbnails or artwork within their galleries.</li>
-            </ul>
-          </div>
-      <div class="project-description">
-          <p class="description">VR-Art-Gallery is a full stack, mobile-responsive, virtual reality application built in React and deployed in Preact where users can upload images into their own custom art galleries to display to the world. As a user, you customize your two-story gallery with texture presets for the floors and walls, and choose your own gallery music (all songs were performed by Kevin Macleod). Additionally, you can favorite other galleries, share their links, or create private galleries that are only accessible by the link you provide.</p>
-      </div>
-      <a href="https://vrartgallery.org/#/" target="_blank" class="btn-light">
-        <i class="fas fa-eye"></i> Live Project
-      </a>
-      <a href="https://github.com/Jake-Brady/VR-Art-Gallery" target="_blank" class="btn-dark">
-        <i class="fab fa-github"></i> Github
-      </a>
-    </div>
-
-      <div class="project project2">
-        <h1>Checked</h1>
-        <a
-        href="https://www.chessmate.net/#/"
-        target="_blank"
-        >
-          <video
-        class="project-video" src="img/checked/checkedClipWalkthrough.mp4" autoplay loop alt="Image Walkthrough of Checked Website"></video>
-        </a>
-        <div class="project-video-features">
-          <div class="project-video-features">
+    <main id="work">
+      <h1 class="lg-heading">
+        My
+        <span class="text-secondary">Work</span>
+      </h1>
+      <h2 class="sm-heading">Personal and Group Projects:</h2>
+      <section id="project-section">
+        <div class="projects">
+          <div class="project project1">
+            <h1>VR-Art-Gallery</h1>
+            <iframe
+              id="vr-preview"
+              src="https://vrartgallery.org/#/admin/Trailer/"
+              allowfullscreen="yes"
+            ></iframe>
+            <div class="project-video-features">
               <ul>
-                <li>Can register via Bcrypt for securely salted and hashed password protection.</li>
-                <li>Profile page allows users to change profile icon to Knight, King, Queen, Rook, or Bishop.</li>
-                <li>PostgreSQL used as database for storing user information and game history.</li>
-                <li>Can challenge online opponents in Arena view on profile and both will be programmatically redirected to gameboard</li>
-                <li>Socket.io was used for multiplayer interactivity over the board, updating movelist, and to allow users to chat with one another in real-time.</li>
-                <li>Users will be redirected to profile page upon checkmate.</li>
-                <li>Entire app was styled using SASS, and About page includes flip container transformations on team description cards.</li>
+                <li>
+                  Conditionally rendered textures, artwork, and music on a-frame
+                  entities based on user selections in gallery creation.
+                </li>
+                <li>
+                  Virtual Reality environment was created with the following
+                  technologies: A-frame, aframe-react, aframe-extras,
+                  aframe-physics-system, aframe-room-component,
+                  aframe-star-system-component.
+                </li>
+                <li>Secure user registration via Bcryptjs.</li>
+                <li>
+                  Features similar to a social networking site: favoriting
+                  galleries and sharing galleries publicly, or privatizing
+                  galleries that are accessible by link only.
+                </li>
+                <li>
+                  Redux used as solution to runtime error in passing data to
+                  A-frame's asset management system.
+                </li>
+                <li>
+                  react-dropzone, aws-sdk, uui, and attr-accept technologies
+                  were used for users to upload their images as either gallery
+                  thumbnails or artwork within their galleries.
+                </li>
               </ul>
-             </div>
-        </div>
-          <div class="project-description">
-              <p class="description">A multiplayer chess application built for chess enthusiasts and those interested in playing real-time chess.  Uses socket.io for multiplayer interactivity and chat features between opponents, uses massive, express, and postgreSQL, for keep tracking of users, game history, and general user info such as wins/losses, rating, and the highest rated players on the site.</p>
+            </div>
+            <div class="project-description">
+              <p class="description">
+                VR-Art-Gallery is a full stack, mobile-responsive, virtual
+                reality application built in React and deployed in Preact where
+                users can upload images into their own custom art galleries to
+                display to the world. As a user, you customize your two-story
+                gallery with texture presets for the floors and walls, and
+                choose your own gallery music (all songs were performed by Kevin
+                Macleod). Additionally, you can favorite other galleries, share
+                their links, or create private galleries that are only
+                accessible by the link you provide.
+              </p>
+            </div>
+            <a
+              href="https://vrartgallery.org/#/"
+              target="_blank"
+              class="btn-light"
+            >
+              <i class="fas fa-eye"></i> Live Project
+            </a>
+            <a
+              href="https://github.com/Jake-Brady/VR-Art-Gallery"
+              target="_blank"
+              class="btn-dark"
+            >
+              <i class="fab fa-github"></i> Github
+            </a>
+          </div>
+
+          <div class="project project2">
+            <h1>Checked</h1>
+            <a href="https://www.chessmate.net/#/" target="_blank">
+              <video
+                class="project-video"
+                src="img/checked/checkedClipWalkthrough.mp4"
+                autoplay
+                loop
+                alt="Image Walkthrough of Checked Website"
+              ></video>
+            </a>
+            <div class="project-video-features">
+              <div class="project-video-features">
+                <ul>
+                  <li>
+                    Can register via Bcrypt for securely salted and hashed
+                    password protection.
+                  </li>
+                  <li>
+                    Profile page allows users to change profile icon to Knight,
+                    King, Queen, Rook, or Bishop.
+                  </li>
+                  <li>
+                    PostgreSQL used as database for storing user information and
+                    game history.
+                  </li>
+                  <li>
+                    Can challenge online opponents in Arena view on profile and
+                    both will be programmatically redirected to gameboard
+                  </li>
+                  <li>
+                    Socket.io was used for multiplayer interactivity over the
+                    board, updating movelist, and to allow users to chat with
+                    one another in real-time.
+                  </li>
+                  <li>
+                    Users will be redirected to profile page upon checkmate.
+                  </li>
+                  <li>
+                    Entire app was styled using SASS, and About page includes
+                    flip container transformations on team description cards.
+                  </li>
+                </ul>
               </div>
-        <a href="https://www.chessmate.net/#/" class="btn-light"> 
-          <i class="fas fa-eye"></i>Live Project
-        </a>
-        <a href="https://github.com/ChessMates2018/Checked" class="btn-dark">
-          <i class="fab fa-github"></i> Github
-        </a>
-      </div>
-
-      <div class="project project3">
-          <h1>Overridden Films</h1>
-          <a
-          href="https://overriddenfilms.com"
-          target="_blank"
-          >
-            <video
-            class="project-video" src="img/overriddenFilms/overriddenFilms.mp4" autoplay loop alt="Image Walkthrough of OverriddenFilms Website"></video>
-          </a>
-          <div class="project-video-features">
-            <ul>
-              <li>Video Background manipulation on landing page using react-video.</li>
-              <li>Entire App styled in SASS/CSS and contains Parallax effect on About page.</li>
-              <li>Secure login via Auth0</li>
-              <li>PostgreSQL used as database for keeping track of business merchandise and user information.</li>
-              <li>Redux used to keep track of number of items in Cart.</li>
-              <li>Can securely make payment using Stripe.</li>
-            </ul>
+            </div>
+            <div class="project-description">
+              <p class="description">
+                A multiplayer chess application built for chess enthusiasts and
+                those interested in playing real-time chess. Uses socket.io for
+                multiplayer interactivity and chat features between opponents,
+                uses massive, express, and postgreSQL, for keep tracking of
+                users, game history, and general user info such as wins/losses,
+                rating, and the highest rated players on the site.
+              </p>
+            </div>
+            <a href="https://www.chessmate.net/#/" class="btn-light">
+              <i class="fas fa-eye"></i>Live Project
+            </a>
+            <a
+              href="https://github.com/ChessMates2018/Checked"
+              class="btn-dark"
+            >
+              <i class="fab fa-github"></i> Github
+            </a>
           </div>
-          <div class="project-description">
-          <p class="description">A clone of Override Films website, overridefilms.com, with added e-commerce functionality while maintaining small business aesthetic. Includes user login, shop, cart, stripe checkout, and notification email based on email used in login in addition to stylistic themes featured in original such as Parallax and consistency in primary and secondary colors used with SASS.</p>
+
+          <div class="project project3">
+            <h1>Overridden Films</h1>
+            <a href="https://overriddenfilms.com" target="_blank">
+              <video
+                class="project-video"
+                src="img/overriddenFilms/overriddenFilms.mp4"
+                autoplay
+                loop
+                alt="Image Walkthrough of OverriddenFilms Website"
+              ></video>
+            </a>
+            <div class="project-video-features">
+              <ul>
+                <li>
+                  Video Background manipulation on landing page using
+                  react-video.
+                </li>
+                <li>
+                  Entire App styled in SASS/CSS and contains Parallax effect on
+                  About page.
+                </li>
+                <li>Secure login via Auth0</li>
+                <li>
+                  PostgreSQL used as database for keeping track of business
+                  merchandise and user information.
+                </li>
+                <li>Redux used to keep track of number of items in Cart.</li>
+                <li>Can securely make payment using Stripe.</li>
+              </ul>
+            </div>
+            <div class="project-description">
+              <p class="description">
+                A clone of Override Films website, overridefilms.com, with added
+                e-commerce functionality while maintaining small business
+                aesthetic. Includes user login, shop, cart, stripe checkout, and
+                notification email based on email used in login in addition to
+                stylistic themes featured in original such as Parallax and
+                consistency in primary and secondary colors used with SASS.
+              </p>
+            </div>
+            <a
+              href="https://overriddenfilms.com"
+              target="_blank"
+              class="btn-light"
+            >
+              <i class="fas fa-eye"></i> Live Project
+            </a>
+            <a
+              href="https://github.com/Besnuggs/OverrideFilmsClone"
+              target="_blank"
+              class="btn-dark"
+            >
+              <i class="fab fa-github"></i> Github
+            </a>
           </div>
-          <a href="https://overriddenfilms.com" target="_blank" class="btn-light">
-            <i class="fas fa-eye"></i> Live Project
-          </a>
-          <a href="https://github.com/Besnuggs/OverrideFilmsClone" target="_blank" class="btn-dark">
-            <i class="fab fa-github"></i> Github
-          </a>
-        </div>
 
-        <div class="project project4">
-          <h1>Socket.io Chat</h1>
-          <a
-          href="https://socket-io-training.herokuapp.com/"
-          target="_blank">
-            <video
-            class="project-video" src="img/letsChat/letsChatMov.mp4" autoplay loop alt="Image Walkthrough of socket.io training exercise for Bright Bridge co-workers."></video>
-          </a>
-          <div class="project-video-features">
-            <ul>
-              <li>The final product of a training exercise I put together for my co-workers to showcase the basics of client to server connection via socket.io.</li>
-              <li>Highlights how to build a node server, serving static files via express, and making a client-to-server connection with socket.io.</li>
-              <li>Built in vanilla JS, CSS, and HTML</li>
-              <li>Demonstrates two basic concepts of socket connection: broadcast.emit vs emit.</li>
-              <li>Broadcast meaning all connected clients will receive the message (user and message in this example), including the sender, and emit meaning that all clients except for the sender will receive the message (`${user} is typing...` example in this case).</li>
-            </ul>
+          <div class="project project4">
+            <h1>Socket.io Chat</h1>
+            <a href="https://socket-io-training.herokuapp.com/" target="_blank">
+              <video
+                class="project-video"
+                src="img/letsChat/letsChatMov.mp4"
+                autoplay
+                loop
+                alt="Image Walkthrough of socket.io training exercise for Bright Bridge co-workers."
+              ></video>
+            </a>
+            <div class="project-video-features">
+              <ul>
+                <li>
+                  The final product of a training exercise I put together for my
+                  co-workers to showcase the basics of client to server
+                  connection via socket.io.
+                </li>
+                <li>
+                  Highlights how to build a node server, serving static files
+                  via express, and making a client-to-server connection with
+                  socket.io.
+                </li>
+                <li>Built in vanilla JS, CSS, and HTML</li>
+                <li>
+                  Demonstrates two basic concepts of socket connection:
+                  broadcast.emit vs emit.
+                </li>
+                <li>
+                  Broadcast meaning all connected clients will receive the
+                  message (user and message in this example), including the
+                  sender, and emit meaning that all clients except for the
+                  sender will receive the message (`${user} is typing...`
+                  example in this case).
+                </li>
+              </ul>
+            </div>
+            <div class="project-description">
+              <p class="description">
+                This was the final product of a training exercise I crafted for
+                my coworkers during my time at Bright Bridge Web. All employees
+                are required to give a training, and I chose socket.io as I
+                believe it's an essential technology for all modern web
+                developers to know. The aim of this project was to show a
+                step-by-step process of how to setup socket.io on the client and
+                server, following the construction of a node server, and to
+                understand how the client and server communicate with one
+                another via sockets. The styling and DOM querying was provided.
+              </p>
+            </div>
+            <a
+              href="https://socket-io-training.herokuapp.com/"
+              target="_blank"
+              class="btn-light"
+            >
+              <i class="fas fa-eye"></i> Live Project
+            </a>
+            <a
+              href="https://github.com/Besnuggs/socket_practice_finish"
+              target="_blank"
+              class="btn-dark"
+            >
+              <i class="fab fa-github"></i> Github
+            </a>
           </div>
-          <div class="project-description">
-          <p class="description">This was the final product of a training exercise I crafted for my coworkers during my time at Bright Bridge Web. All employees are required to give a training, and I chose socket.io as I believe it's an essential technology for all modern web developers to know. The aim of this project was to show a step-by-step process of how to setup socket.io on the client and server, following the construction of a node server, and to understand how the client and server communicate with one another via sockets. The styling and DOM querying was provided. </p>
+
+          <div class="project project5">
+            <h1>Connect Four</h1>
+            <a href="https://besnuggs.github.io/connectFour/" target="_blank">
+              <video
+                class="project-video"
+                src="img/connectFour/connectFourMov.mp4"
+                autoplay
+                loop
+                alt="Image Walkthrough of connect four project built on TeamTreeHouse"
+              ></video>
+            </a>
+            <div class="project-video-features">
+              <ul>
+                <li>Turn-based, hotseat Connect Four game.</li>
+                <li>
+                  Once user starts game, Tokens can be moved using left and
+                  right arrows keys, and they can be dropped using the down
+                  arrow key.
+                </li>
+                <li>
+                  Keeps track of Game state (player's turn, remaining tokens, if
+                  four tokens are connected horizontally, vertically, or
+                  diagonally, declaring winner, Spaces in board occupied with a
+                  token, and etc.)
+                </li>
+                <li>
+                  App was constructed with OOP principles in mind:
+                  Encapsulation, Abstraction, Polymorphism, and Inheritance.
+                </li>
+                <li>
+                  <a
+                    href="https://github.com/Besnuggs/connectFour/tree/master/js"
+                    target="_blank"
+                    ><strong>Direct link to source code.</strong></a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="project-description">
+              <p class="description">
+                A project presented on TeamTreeHouse for users to test their
+                understanding of Object-Oriented Programming principles. The
+                user is tasked with constructing classes for each facet of the
+                game: Board, Spaces, Tokens, Players, and general Game logic and
+                state. The logic behind this was simple; however, the clarity
+                and readability within this project was the main objective
+                throughout this project. I've included a direct link to the JS
+                files above.
+              </p>
+            </div>
+            <a
+              href="https://besnuggs.github.io/connectFour/"
+              target="_blank"
+              class="btn-light"
+            >
+              <i class="fas fa-eye"></i> Live Project
+            </a>
+            <a
+              href="https://github.com/Besnuggs/connectFour/"
+              target="_blank"
+              class="btn-dark"
+            >
+              <i class="fab fa-github"></i> Github
+            </a>
           </div>
-          <a href="https://socket-io-training.herokuapp.com/" target="_blank" class="btn-light">
-            <i class="fas fa-eye"></i> Live Project
-          </a>
-          <a href="https://github.com/Besnuggs/socket_practice_finish" target="_blank" class="btn-dark">
-            <i class="fab fa-github"></i> Github
-          </a>
+
+          <div class="project project6">
+            <h1>Basic JavaScript Chess AI</h1>
+            <a
+              href="https://besnuggs.github.io/JavaScriptChessAI/"
+              target="_blank"
+            >
+              <video
+                class="project-video"
+                src="img/javascriptChessAI/javascriptAIMov.mp4"
+                autoplay
+                loop
+                alt="Image Walkthrough of JavaScript Chess AI project"
+              ></video>
+            </a>
+            <div class="project-video-features">
+              <ul>
+                <li>
+                  Play a chess script that generates its moves based on board
+                  evaluation, a minimax algorithm, and alpha beta pruning.
+                </li>
+                <li>
+                  Displays SAN (Standard Algorithmic Notation) with a
+                  copy-to-clipboard function for further analysis in a chess GUI
+                  like Fritz.
+                </li>
+                <li>Undo button to revert board state to previous position.</li>
+                <li>
+                  Displays how many positions evaluated, evaluation time, and
+                  how many positions evaluated per second.
+                </li>
+              </ul>
+            </div>
+            <div class="project-description">
+              <p class="description">
+                This is an ongoing personal project of mine. I'm fascinated with
+                the game of chess, and this was largely an attempt at
+                understanding minMax algorithms based on a
+                <a
+                  href="https://www.freecodecamp.org/news/simple-chess-ai-step-by-step-1d55a9266977/"
+                  target="_blank"
+                  ><strong>tutorial</strong></a
+                >
+                I found online. It's my hope to one day create a script that
+                plays at a 2000 ELO performance or better. Things I hope to
+                include in this script in the future: Understanding of King
+                Safety (Castling appropriately), an Opening book (with
+                selectable openings by the user), and prophylactic awareness.
+              </p>
+            </div>
+            <a
+              href="https://besnuggs.github.io/JavaScriptChessAI/"
+              target="_blank"
+              class="btn-light"
+            >
+              <i class="fas fa-eye"></i> Live Project
+            </a>
+            <a
+              href="https://github.com/Besnuggs/JavaScriptChessAI"
+              target="_blank"
+              class="btn-dark"
+            >
+              <i class="fab fa-github"></i> Github
+            </a>
+          </div>
         </div>
+      </section>
+    </main>
 
-        
-      <div class="project project5">
-        <h1>Connect Four</h1>
-        <a
-          href="https://besnuggs.github.io/connectFour/"
-          target="_blank">
-          <video
-            class="project-video" src="img/connectFour/connectFourMov.mp4" autoplay loop alt="Image Walkthrough of connect four project built on TeamTreeHouse"></video>
-        </a>
-        <div class="project-video-features">
-          <ul>
-            <li>Turn-based, hotseat Connect Four game.</li>
-            <li>Once user starts game, Tokens can be moved using left and right arrows keys, and they can be dropped using the down arrow key.</li>
-            <li>Keeps track of Game state (player's turn, remaining tokens, if four tokens are connected horizontally, vertically, or diagonally, declaring winner, Spaces in board occupied with a token, and etc.)</li>
-            <li>App was constructed with OOP principles in mind: Encapsulation, Abstraction, Polymorphism, and Inheritance. </li>
-            <li><a href="https://github.com/Besnuggs/connectFour/tree/master/js" target="_blank"><strong>Direct link to source code.</strong></a></li>
-          </ul>
-        </div>
-        <div class="project-description">
-        <p class="description">A project presented on TeamTreeHouse for users to test their understanding of Object-Oriented Programming principles.  The user is tasked with constructing classes for each facet of the game: Board, Spaces, Tokens, Players, and general Game logic and state. The logic behind this was simple; however, the clarity and readability within this project was the main objective throughout this project. I've included a direct link to the JS files above.</p>
-        </div>
-        <a href="https://besnuggs.github.io/connectFour/" target="_blank" class="btn-light">
-          <i class="fas fa-eye"></i> Live Project
-        </a>
-        <a href="https://github.com/Besnuggs/connectFour/" target="_blank" class="btn-dark">
-          <i class="fab fa-github"></i> Github
-        </a>
-      </div>
+    <footer id="main-footer">Copyright &copy; 2021</footer>
 
-      
-      <div class="project project6">
-        <h1>Basic JavaScript Chess AI</h1>
-        <a
-        href="https://besnuggs.github.io/JavaScriptChessAI/"
-        target="_blank"
-        >
-          <video
-          class="project-video" src="img/javascriptChessAI/javascriptAIMov.mp4" autoplay loop alt="Image Walkthrough of JavaScript Chess AI project"></video>
-        </a>
-        <div class="project-video-features">
-          <ul>
-            <li>Play a chess script that generates its moves based on board evaluation, a minimax algorithm, and alpha beta pruning. </li>
-            <li>Displays SAN (Standard Algorithmic Notation) with a copy-to-clipboard function for further analysis in a chess GUI like Fritz.</li>
-            <li>Undo button to revert board state to previous position.</li>
-            <li>Displays how many positions evaluated, evaluation time, and how many positions evaluated per second.</li>
-          </ul>
-        </div>
-        <div class="project-description">
-        <p class="description"> This is an ongoing personal project of mine. I'm fascinated with the game of chess, and this was largely an attempt at understanding minMax algorithms based on a <a href="https://www.freecodecamp.org/news/simple-chess-ai-step-by-step-1d55a9266977/" target="_blank"><strong>tutorial</strong></a> I found online. It's my hope to one day create a script that plays at a 2000 ELO performance or better. Things I hope to include in this script in the future: Understanding of King Safety (Castling appropriately), an Opening book (with selectable openings by the user), and prophylactic awareness.</p>
-        </div>
-        <a href="https://besnuggs.github.io/JavaScriptChessAI/" target="_blank" class="btn-light">
-          <i class="fas fa-eye"></i> Live Project
-        </a>
-        <a href="https://github.com/Besnuggs/JavaScriptChessAI" target="_blank" class="btn-dark">
-          <i class="fab fa-github"></i> Github
-        </a>
-      </div>
-
-    </div>
-  </section>
-
-    
-  </main>
-
-  <footer id="main-footer">
-    Copyright &copy; 2020
-  </footer>
-
-  <script src="js/main.js"></script>
-  
-</body>
+    <script src="js/main.js"></script>
+  </body>
 </html>
