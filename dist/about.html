@@ -86,7 +86,7 @@
               Underwent HIPAA compliance training for adequately handling patient-sensitive data.
             </li>
             <li>
-              Emphatically used React, Node, Firebase, Google Cloud Platform technologies (BigQuery, CRON jobs through Pubsubs, storage, VM instances, cloud-functions), SQL, Material-UI, Tailwind, and 
+              Emphatically used React, Node, Firebase, Google Cloud Platform technologies (BigQuery, CRON jobs through Pubsubs, storage, VM instances, cloud-functions), SQL, Material-UI, and Tailwind.
             </li>
             <li>
               Improved the readability of my code from learning alongside Adobee and Amazon engineers who gave constructive feedback on my PRs.
@@ -94,49 +94,57 @@
             </ul>
 
             <strong>Accomplishments</strong>
-            <ul>
-              <li>Client offered $20,000 to have a custom built insurance verification table in the client-portal for viewing statuses of patient insurances. I completed this in 2 days.
+            <ul class="about-bullets">
+              <li>Client offered $20,000 to have a custom built insurance verification table in the client-portal for viewing statuses of patient insurances. I completed this within 2 days.
               </li>
               <li>
                 Uncovered and fixed buggy code, not related to my assignments, that prevented Callforce's notification system (email and SMS updates) from working properly.
               </li>
               <li>
-                Created better, structured <a href='https://cloud.google.com/logging/docs/structured-logging#:~:text=In%20Cloud%20Logging%2C%20structured%20logs,the%20structure%20of%20your%20payloads.' target='_blank'></a>google cloud logs, outside of my assignments, for better error visibility in our more frequently used cloud-functions.
+                Created better, <strong><a href='https://cloud.google.com/logging/docs/structured-logging#:~:text=In%20Cloud%20Logging%2C%20structured%20logs,the%20structure%20of%20your%20payloads.' target='_blank'> structured google cloud logs</a></strong>, outside of my assignments, for better error visibility in our more frequently used cloud-functions.
               </li>
             </ul>
 
             <strong>Projects</strong>
-            <ul>
-            <li>
-              <strong>DSO (Dental Service Organization) List Filtering Electron
-              Application</strong>
-              <ul>
+            <li><em>Client Portal</em></li>
+            React-based web application that communicated with our nonSQL firestore DB through Google's Firebase SDK. It was built with Tailwind as a UI library for a cleaner, modern look for Callforce's clients. Clients could view appointments that were scheduled, see notes and action items (e.g. a patient could ask for the office to call them back about insurance and the client could mark that as an action taken.) from callers who had contacted patients, listen to voicemails, edit contact information as well as notifications pertaining to the services we offer (e.g. 'Receive texts and emails whenever a new patient is scheduled')
+              <ul class="about-bullets">
                 <li>
-                  Built an electron application for DSOs that filtered, sorted,
+                  Built out the frontend alone and hit our MVP deadline of 2 months. Mockups were given to me by our CTO.
+                </li>
+                <li>
+                  Leveraged localForage for client-side caching of nonsensitive data for better performance boost.
+                </li>
+                <li>
+                  Unlike the previous portal design, this one supported <a href='https://en.wikipedia.org/wiki/Dental_Service_Organizations#:~:text=Dental%20Service%20Organizations%2C%20known%20in,%2C%20including%20non%2Dclinical%20operations.' target='_blank'><strong>DSO</strong></a> accounts which needed access to many offices. Callforce's previous portal suffered many performance issues and wasn't architected in a way that could support that sort of overview.
+                </li>
+                <li>
+                  Our original clients, nonDSOs, responded very positively to the new portal. In the words of Callforce's CTO, 'This is best major release Callforce has ever had.'
+                </li>
+              </ul>
+            <li>
+              <em>DSO List Filtering Electron
+              Application</em>
+              <ul class="about-bullets">
+                <li>
+                  An electron application for DSOs that filtered, sorted,
                   and consolidated millions of patient records based on shared
                   phone numbers and outputed office-specific csvs.
                 </li>
-               
-                <li>
-                  Patient records were consolidated based on
-                  their primary phone numbers.
-                </li>
-                <li>
-                  Filtered by either pediatric/non-pediatric requirements
-                  (age-ranges), if patient had medicare, if patient was overdue
-                  for an appointment (often over 6 months since last
-                  appointment), and etc.
-                </li>
-                <li>
-                  Sorted by age for conslidated patient records once groupings
-                  of shared phone numbers were identified.
-                </li>
-              
+                <li>Built this alone within only a few weeks time.</li>
+                  <li>
+                    Effect: Reduced operation overhead by supporting multiple
+                    lists filtering simultaneously, dividing DSO lists into
+                    office-level csvs for better accountability and handling among
+                    teams, prevented multiple calls on the same patient, and
+                    greatly sped up production of calls by eliminating filtering
+                    by hand.
+                  </li>
               </ul>
             </li>
             <li>
-             <strong>Dental Office List Filtering Cloud-Functions for Practice Management Softwares</strong> 
-              <ul>
+             <em>Core Service Data Gathering: List Filtering Cloud-Functions for Practice Management Softwares and Five9 Reports</em> 
+              <ul class="about-bullets">
                 <li>
                   Built cloud-functions to support non-DSO dental office list
                   filtering that returned csvs that would then be uploaded into
@@ -144,37 +152,18 @@
                   <strong><a href="https://www.five9.com/" target='_blank'>five9</a></strong>
                   queue for callers to call upon.
                 </li>
+                <li>These filters would also track list sizes, before and after filtering, and post them to our firebase DB. These list sizes would then be mirrored in our SQL BigQuery tables which are then visualized in Tableau for better visibility of listSizes by office.</li>
                 <li>
-                  The supported Practice Management Softwares supported in these list-filtering cloud-functions: Curve, Denticon, Dentrix, DentrixAscend, EagleSoft, Open Dental, Mac Practice, and Practice Works.
+                  The supported Practice Management Softwares in these list-filtering cloud-functions are Curve, Denticon, Dentrix, DentrixAscend, EagleSoft, Open Dental, Mac Practice, and Practice Works.
                 </li>
                 <li>
-                  Multiple scenes constructed for sole office list handling
-                  within our internal console that supported many list uploads
-                  simultaneously. Lists would be uploaded, requested to a
-                  cloud-function to be sorted/filtered/consolidated, and would
-                  be filtered by utility functions specific to the PMS (Practice
-                  Management Software - e.g. Dentrix) that generated the patient
-                  list.
+                  Built PubSub functions that request Five9 reports, using SOAP, of our inbound and outbound call logs every 5 minutes, every work day from 8AM to 10PM, so Callforce's VP of operations and his analysts can have a live feed of our daily Call Volume.
                 </li>
                 <li>
-                  Effect: Reduced operation overhead by supporting multiple
-                  lists filtering simultaneously, dividing DSO lists into
-                  office-level csvs for better accountability and handling among
-                  teams, prevented multiple calls on the same patient, and
-                  greatly sped up production of calls by eliminating filtering
-                  by hand.
+                  Call volume data is stored in our BigQuery tables, along with listSizes, which is connected to our VP's tableau account for data visualization. Essentialy, because of these features and the data I was able to format and store, our operations VP has instant access to the state of each caller's progress throughout the day in nearly real-time.
                 </li>
               </ul>
             </li>
-            <li><strong>Client-Facing Portal</strong></li>
-            <ul>
-              <li>
-                Have built many cloud-functions onRequest, onCall, pubsub, and
-                etc
-              </li>
-              
-            </ul>
-          </ul>
           <div class="job-img-div">
             <!-- <img src="./img/snugmusicstudio1.JPG" alt="Snug Music Lessons Studio #1" id="studio1">
           <img src="./img/snugmusicstudio2.JPG" alt="Snug Music Lessons Studio #2" id="studio2"> -->
