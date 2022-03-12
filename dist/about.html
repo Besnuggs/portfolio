@@ -4,12 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link
+    <!-- <link
       rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
-      integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
-      crossorigin="anonymous"
-    />
+      href="https://use.fontawesome.com/releases/v6.0.0/css/all.min.css"
+     
+    /> -->
     <link rel="stylesheet" href="css/main.css" />
     <title>About Me</title>
   </head>
@@ -51,7 +50,13 @@
         About
         <span class="text-secondary">Me</span>
       </h1>
-      <h2 class="sm-heading">Hello.</h2>
+      <h2 class="sm-heading">
+        Hey there!
+        &#128075;
+        <div>
+          <span>My name is Brady, and here's my <u><a href="./files/BradySnuggs_Resume.pdf" download="BradySnuggs-Resume.pdf">resume.</a></u></span>
+        </div>
+      </h2>
       <div class="about-info">
         <div class="bio1"></div>
         <img
@@ -62,9 +67,78 @@
         <div class="bio2"></div>
         <!-- Jobs - Descriptions -->
         <div class="job job-1">
+          <h3>Rock Solid Internet Systems</h3>
+          <h5>Full Stack Software Engineer</h5>
+          <h6>July, 2021 to Current</h6>
+          <p class="about-descriptions">
+            <strong>
+              <a href="https://www.rocksolidinternet.com/" target="_blank">Rock Solid Internet Systems</a>
+            </strong>,
+            RSIS, serves as a shipping platform for businesses of all sizes. REMS, RSIS's Enterprise Management System application, serves as the customer relational management system for Rock Solid's clients, and Webship, its shipping portal, allows its users to integrate their ecommerce stores to easily ship with their carriers.
+          </p>
+
+          <div>
+            <h4><strong>Skills</strong></h4>
+            <ul class="about-bullets">
+              <li>
+                Working in a remote development environment in AWS cloud. 
+              </li>
+              <li>
+                Using the following technologies: React.js, UIKit@v2, PHP5.5 - PHP8.0, AWS, mySQL, and Docker.
+              </li>
+              <li>
+                Collaboratively exchanging ideas with my team and developing forward-thinking strategies for handling large feature implementations into our software.
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h4><strong>Teams</strong></h4>
+            <div>
+              <span><u>XPS Team</u></span>
+              <p>July, 2021 to February, 2022</p>
+              <ul class="about-bullets">
+                <li>Maintained RSIS's Webship application for <u><a href="https://xpsship.com/" target="_blank">XPSShip</a></u> by fixing various bugs and providing satisfactory solutions for new features</li>
+                <li>Familiarity in Oauth/Oauth2.0 token flow with ecommerce integrations.</li>
+                <li>Fetching, updating, deleting orders via ecommerce APIs (Shopify, Amazon, Ebay)</li>
+                <li>Automated steps for users throughout the shipment process</li>
+              </ul>
+              <span><u>Core Team</u></span>
+              <p>February, 2022 to Current</p>
+              <ul class="about-bullets">
+                <li>Worked closely alongside our senior team lead developer and lead architect on our PHP migration from 5.5 to 7.4</li>
+                <li>Organized Google Doc sheets for tracking bugs, testing application processes, and documenting commits that were later cherry-picked into PHP5 and PHP7 compatible PRs </li>
+                <li>Responsible for the success of the Webship application during the PHP migrations while also verifying our unit tests, legacy unit tests, and REST APIs continued to work as expected.</li>
+                <li>Lead developer on the PHP migration from 7.4 to 8.0</li>
+                <li>Created Ubuntu@v20/PHP8 Docker Image with matching modules/extensions to our production server</li>
+                <li>Responsible for success of all RSIS source code in the PHP8 environment </li>
+                <li>Helped maintained RSIS's REMS application by fixing bugs reported through our jira and assigned to me</li>
+                <li>Frequently reviewed PRs of my peers and while giving feedback that is pointed, critical, and welcoming</li>
+              </ul>
+            </div>
+          </div>
+          
+          <!-- <div>
+            <strong>Accomplishments</strong>
+            <ul class="about-bullets">
+              <li>
+                Launched successful migration of PHPMarch 8th, 2022
+              </li>
+              <li>
+
+              </li>
+              <li>
+
+              </li>
+              
+            </ul>
+          </div> -->
+        </div>
+
+        <div class="job job-2">
           <h3>Callforce</h3>
           <h5>Full Stack Software Engineer</h5>
-          <h6>May, 2020 to Present</h6>
+          <h6>May, 2020 to July, 2021</h6>
           <p class="about-descriptions">
             <strong
               ><a href="https://www.getcallforce.com/" target="_blank"
@@ -102,11 +176,10 @@
             <li>
               Client offered $20,000 to have a custom built insurance
               verification table in the client-portal for viewing statuses of
-              patient insurances. I completed this within 2 days.
+              patient insurances. We created a satisfactory table within a deadline of two days.
             </li>
             <li>
-              Uncovered and fixed buggy code, not related to my assignments,
-              that prevented Callforce's notification system (email and SMS
+              Uncovered and fixed buggy code that prevented Callforce's notification system (email and SMS
               updates) from working properly.
             </li>
             <li>
@@ -138,7 +211,7 @@
           <ul class="about-bullets">
             <li>
               Built out the frontend alone and hit our MVP deadline of 2 months.
-              Mockups were given to me by our CTO.
+              Mockups were provided to me by our CTO.
             </li>
             <li>
               Leveraged localForage for client-side caching of nonsensitive data
@@ -155,11 +228,6 @@
               portal suffered many performance issues and wasn't architected in
               a way that could support that sort of overview.
             </li>
-            <li>
-              Our original clients, nonDSOs, responded very positively to the
-              new portal. In the words of Callforce's CTO, 'This is best major
-              release Callforce has ever had.'
-            </li>
           </ul>
           <li>
             <em>DSO List Filtering Electron Application</em>
@@ -169,7 +237,7 @@
                 consolidated millions of patient records based on shared phone
                 numbers and outputed office-specific csvs.
               </li>
-              <li>Built this alone within only a few weeks time.</li>
+              <li>Built this as a solo project with a deadline of 2 weeks.</li>
               <li>
                 Effect: Reduced operation overhead by supporting multiple lists
                 filtering simultaneously, dividing DSO lists into office-level
@@ -225,52 +293,6 @@
               </li>
             </ul>
           </li>
-          <div class="job-img-div">
-            <!-- <img src="./img/snugmusicstudio1.JPG" alt="Snug Music Lessons Studio #1" id="studio1">
-          <img src="./img/snugmusicstudio2.JPG" alt="Snug Music Lessons Studio #2" id="studio2"> -->
-          </div>
-        </div>
-
-        <div class="job job-2">
-          <h3>Independent Contractor</h3>
-          <h5>React/WordPress Developer</h5>
-          <h6>Nov, 2019 to Nov, 2020</h6>
-          <p class="about-descriptions">
-            I worked as a React developer for
-            <a href="https://accenagroup.com/" target="_blank">AccenaGroup</a>
-            on a map-editing tool for water inspectors leveraging the Konva
-            library for shape building, and I also worked as a WordPress
-            developer for
-            <a href="https://retailconsultingteam.com/" target="_blank"
-              >retailconsultingteam</a
-            >.
-          </p>
-          <ul class="about-bullets">
-            <li>
-              Experience in cPanel, DNS updates, API service calls, GIT version
-              control, hosting, file management, and creating sharp themes in
-              WordPress using Divi.
-            </li>
-            <li>
-              Update clients daily on requested features and any issues
-              encountered, and implement technologies that best serve the
-              project.
-            </li>
-            <li>
-              <a href="https://retailconsultingteam.com" target="_blank">
-                <strong> Link to RetailConsultingTeam. </strong>
-              </a>
-            </li>
-          </ul>
-
-          <div class="job-img-div">
-            <a href="https://teamtreehouse.com/bradysnuggs" target="_blank">
-              <img
-                src="img/treehouse.png"
-                alt="Team TreeHouse Icon and link to profile"
-                id="TreeHouse"
-            /></a>
-          </div>
         </div>
 
         <div class="job job-3">
@@ -340,7 +362,7 @@
       </div>
     </main>
 
-    <footer id="main-footer">Copyright &copy; 2021</footer>
+    <footer id="main-footer">Copyright &copy; <span id="current-year"></span></footer>
 
     <script src="js/main.js"></script>
   </body>
