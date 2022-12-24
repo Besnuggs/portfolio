@@ -2,19 +2,16 @@
   "name": "portfolioresponsivepage",
   "version": "1.0.0",
   "description": "Responsive Portfolio",
-  "main": "index.js",
+  "main": "server/server.js",
   "scripts": {
-    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+    "sass": "sass -w scss/main.scss dist/css/main.css"
   },
   "author": "Brady Snuggs",
   "license": "ISC",
   "dependencies": {
     "dotenv": "^6.1.0",
     "express": "^4.16.4",
-    "node-sass": "^7.0.1",
+    "sass": "^1.5.7",
     "particlesjs": "^2.2.3"
-  },
-  "devDependencies": {
-    "prettier": "^2.2.1"
   }
 }

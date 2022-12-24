@@ -36,8 +36,7 @@
 .menu.show {
   visibility: visible;
 }
-.menu-branding,
-.menu-nav {
+.menu-branding, .menu-nav {
   display: flex;
   flex-flow: column wrap;
   align-items: center;
@@ -69,8 +68,7 @@
 .menu-branding .portrait {
   width: 250px;
   height: 250px;
-  background: url("https://s3.amazonaws.com/bradypersonal/Posing+with+Poe.jpg")
-    no-repeat;
+  background: url("https://s3.amazonaws.com/bradypersonal/Posing+with+Poe.jpg") no-repeat;
   background-position: center;
   background-size: cover;
   border-radius: 50%;
@@ -219,9 +217,7 @@ main#home h1 {
 .about-info {
   display: grid;
   grid-gap: 30px;
-  grid-template-areas:
-    "bio1 bioimage bio2"
-    "job1 job2 job3";
+  grid-template-areas: "bio1 bioimage bio2" "job1 job2 job3";
   grid-template-columns: repeat(3, 1fr);
 }
 .about-info .bio-image {
@@ -323,17 +319,13 @@ main#home h1 {
   color: #000;
 }
 
-.btn,
-.btn-dark,
-.btn-light {
+.btn, .btn-light, .btn-dark {
   display: block;
   padding: 0.5rem 1rem;
   border: 0;
   margin-bottom: 0.3rem;
 }
-.btn:hover,
-.btn-dark:hover,
-.btn-light:hover {
+.btn:hover, .btn-light:hover, .btn-dark:hover {
   background: #778899;
   color: #000;
   transition: all 0.5s ease-out;
@@ -418,7 +410,7 @@ main#home h1 {
 }
 
 #Express {
-  width: 240px;
+  width: 200px;
   height: 139px;
 }
 
@@ -441,7 +433,6 @@ main#home h1 {
     grid-template-columns: repeat(4, 1fr);
   }
 }
-
 @media screen and (min-width: 769px) and (max-width: 1170px) and (orientation: portrait) {
   .projects {
     grid-template-columns: repeat(3, 1fr);
@@ -453,16 +444,9 @@ main#home h1 {
     width: 20px;
   }
 }
-
 @media screen and (min-width: 769px) and (max-width: 1170px) and (orientation: landscape) {
   .about-info {
-    grid-template-areas:
-      "bio1"
-      "bioimage"
-      "bio2"
-      "job1"
-      "job2"
-      "job3";
+    grid-template-areas: "bio1" "bioimage" "bio2" "job1" "job2" "job3";
     grid-template-columns: 1fr;
   }
   .projects {
@@ -488,7 +472,6 @@ main#home h1 {
     width: 550px;
   }
 }
-
 @media screen and (max-width: 768px) and (orientation: portrait) {
   main {
     align-items: center;
@@ -518,8 +501,7 @@ main#home h1 {
     transform: translate3d(100%, 0, 0);
   }
   .menu-branding .portrait {
-    background: url("https://s3.amazonaws.com/bradypersonal/Posing+with+Poe.jpg")
-      no-repeat;
+    background: url("https://s3.amazonaws.com/bradypersonal/Posing+with+Poe.jpg") no-repeat;
     background-position: center;
     background-size: cover;
     width: 150px;
@@ -536,13 +518,7 @@ main#home h1 {
     width: 99%;
   }
   .about-info {
-    grid-template-areas:
-      "bio1"
-      "bioimage"
-      "bio2"
-      "job1"
-      "job2"
-      "job3";
+    grid-template-areas: "bio1" "bioimage" "bio2" "job1" "job2" "job3";
     grid-template-columns: 1fr;
   }
   .job {
@@ -558,7 +534,6 @@ main#home h1 {
     width: 50%;
   }
 }
-
 @media screen and (max-width: 768px) and (orientation: landscape) {
   menu .menu-nav {
     display: flex;
@@ -574,13 +549,7 @@ main#home h1 {
     margin-top: -140px;
   }
   .about-info {
-    grid-template-areas:
-      "bio1"
-      "bioimage"
-      "bio2"
-      "job1"
-      "job2"
-      "job3";
+    grid-template-areas: "bio1" "bioimage" "bio2" "job1" "job2" "job3";
     grid-template-columns: 1fr;
   }
   .projects {
@@ -593,7 +562,6 @@ main#home h1 {
     width: 100%;
   }
 }
-
 .boxes div {
   width: 75%;
 }
@@ -674,3 +642,5 @@ main#home h1 {
     font-size: 20px;
   }
 }
+
+/*# sourceMappingURL=main.css.map */
