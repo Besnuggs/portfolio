@@ -49,9 +49,10 @@
         Hey there!
         &#128075;
         <div>
-          <span>My name is Brady, and here's my <u><a href="./files/BradySnuggs_Resume.pdf" download="BradySnuggs-Resume.pdf">resume.</a></u></span>
+          <span>Here's my <u><a href="./files/BradySnuggs-Resume.pdf" download="BradySnuggs-Resume.pdf">resume.</a></u></span>
         </div>
       </h2>
+      
       <div class="about-info">
         <div class="bio1"></div>
         <img
@@ -60,11 +61,78 @@
           class="bio-image"
         />
         <div class="bio2"></div>
+
         <!-- Jobs - Descriptions -->
         <div class="job job-1">
+          <h3>American Contract Bridge League</h3>
+          <h5>Full Stack Software Engineer</h5>
+          <h6>April, 2022 to Current</h6>
+          <p class="about-descriptions">
+              <a href="https://www.acbl.org/" target="_blank"> <strong>American Contract Bridge League</strong></a>,
+            ACBL, is one of the largest and most prominent bridge organizations in the world. Its flagship application, my.acbl.org, allows its members to see their membership status, have access to ACBL membership exclusive benefits, and monitor their masterpoint progress. ACBL has many applications working in harmony for its members, Bridge clubs, and invested stakeholders.
+          </p>
+
+          <div>
+            <h4><strong>Skills</strong></h4>
+            <ul class="about-bullets">
+              <li>
+                Developed and maintained multiple applications and services using PHP, Node.js, and Python using MySQL and postgreSQL databases.
+              </li>
+              <li>
+                Maintained ACBL's masterpoint engine, MPENv1, throughout the development of MPENv2 while assisting MPENv2 team with testing and intel-gathering.
+              </li>
+              <li>
+                Assisted on ACBL's flagship application, my.acbl.org, and maintained ACBL's core game uploading portal, results.acbl.org for North American Bridge clubs.
+              </li>
+              <li>
+                Built CI CD pipelines in bitbucket and AWS for legacy applications and programs that were either vulnerable to critical issues, lacked streamlined development processes, or faced the risk of becoming unusable due to the absence of automated deployment and testing.
+              </li>
+              <li>
+                Reduced tech debt by eliminating unused AWS resources throughout AWS services such as AWS SQS, Ec2s, S3 buckets, and RDS. Further improved AWS RDS stability by identifying and eliminating expensive queries.
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h4><strong>Applications</strong></h4>
+            <div>
+              <span><u>MyACBL</u></span>
+              <ul class="about-bullets">
+                <li>Maintained ACBL's flaghip application, <u><a href="https://my.acbl.org/" target="_blank">MyACBL</a></u>, by fixing bugs and improving performance by eliminating expensive queries that would result in RDS outages during periods of high traffic.</li>
+                <li>Worked in Laravel and Vue.js with various DB connections to MySQL, postgreSQL, and DB2 databases.</li>
+                <li>Improved CI CD deployments speeds by breaking out multiple environment-specific pipelines rather than using the de facto "Test" and "Production" pipelines.</li>
+              </ul>
+              
+              <span><u>Results Gateway</u></span>
+              <ul class="about-bullets">
+                <li>Maintained ACBL's "Live for Clubs" core uploading portal, <u><a href="https://results.acbl.org/#/" target="_blank">Results Gateway</a></u>, for clubs to upload their face-to-face games.</li>
+                <li>Worked in Python Flask and Vue.js with MySQL DB connections.</li>
+                <li>Improved validation checks to ensure club games were "unique" and would not overwrite, or soft delete, previous uploads.</li>
+                <li>Created endpoints for "en masse" uploads of gamefiles to further improve internal testing of changes made to MPENv1 and MPENv2.</li>
+              </ul>
+
+              <span><u>Masterpoints Engine</u></span>
+              <ul class="about-bullets">
+                <li>Maintained ACBL's "Masterpoint Engine," <u><a href="https://myemail.constantcontact.com/New-Masterpoint--Engine-Launch.html?soid=1102619973081&aid=J5AHnTM0c4Y" target="_blank">otherwise known as "MPENv1"</a></u>, for players in ACBL sanctioned virtual and face-to-face games by rewarding them with calculated masterpoints.</li>
+                <li>Worked in Python scripts that communicated via AWS SQS polling queues.</li>
+                <li>Assisted contracted team working on MPENv2 with various testing and researching MPENv1 rules.</li>
+              </ul>
+
+              <span><u>"Live for Tournaments" Applications</u></span>
+              <ul class="about-bullets">
+                <li>Maintained ACBL's "Live for Tournaments" applications and services for uploading and processing "Live for Tournaments" games.</li>
+                <li>Wrote IT documentation and modified ACBLLive Desktop Client to enforce https connection to live.acbl.org. I also wrote documentation on how to build and distribute the application to tournament directors. Written in C#, this application allows tournament directors to upload tournament gamefiles.</li>
+                <li>Wrote documentation and created CI CD pipeline to multiple testing environments, as well as a new production environment, for Gearman Server. The Gearman server was responsible for parsing uploaded tournament files and sFTPing them to XMLMigrator. Written in PHP and leveraged Gearman and supervisord for queueing jobs for processing uploads and sending player notifications via SendGrid's and Twilio's APIs.</li>
+                <li>XMLMigrator server, written in C#, was responsible for processing tournament gamefiles by posting their results into our AWS RDS DB to then be displayed on ACBL's live.acbl.org site. I wrote documentation on impacted tables and how it fit into the uploading process for "Live for Tournament" games while building better testing environments building the CI CD pipeline for Gearman.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="job job-2">
           <h3>Rock Solid Internet Systems</h3>
           <h5>Full Stack Software Engineer</h5>
-          <h6>July, 2021 to Current</h6>
+          <h6>July, 2021 to April, 2022</h6>
           <p class="about-descriptions">
               <a href="https://www.rocksolidinternet.com/" target="_blank"> <strong>Rock Solid Internet Systems</strong></a>,
             RSIS, serves as a shipping platform for businesses of all sizes. REMS, RSIS's Enterprise Management System application, serves as the customer relational management system for Rock Solid's clients, and Webship, its shipping portal, allows its users to integrate their ecommerce stores to easily ship with their carriers.
@@ -97,7 +165,7 @@
                 <li>Automated steps for users throughout the shipment process</li>
               </ul>
               <span><u>Core Team</u></span>
-              <p>February, 2022 to Current</p>
+              <p>February, 2022 to April, 2022</p>
               <ul class="about-bullets">
                 <li>Worked closely alongside our senior team lead developer and lead architect on our PHP migration from 5.5 to 7.4</li>
                 <li>Organized Google Doc sheets for tracking bugs, testing application processes, and documenting commits that were later cherry-picked into PHP5 and PHP7 compatible PRs </li>
@@ -110,25 +178,9 @@
               </ul>
             </div>
           </div>
-          
-          <!-- <div>
-            <strong>Accomplishments</strong>
-            <ul class="about-bullets">
-              <li>
-                Launched successful migration of PHPMarch 8th, 2022
-              </li>
-              <li>
-
-              </li>
-              <li>
-
-              </li>
-              
-            </ul>
-          </div> -->
         </div>
 
-        <div class="job job-2">
+        <div class="job job-3">
           <h3>Callforce</h3>
           <h5>Full Stack Software Engineer</h5>
           <h6>May, 2020 to July, 2021</h6>
@@ -286,71 +338,6 @@
               </li>
             </ul>
           </li>
-        </div>
-
-        <div class="job job-3">
-          <h3>Bright Bridge Web</h3>
-          <h5>Project Manager && Full Stack Web Developer</h5>
-          <h6>Feb, 2019 to Nov, 2019</h6>
-          <p class="about-descriptions">
-            As an employee at <strong><a href="https://brightbridgeweb.com/" target="_blank">Bright Bridge</a></strong>, I largely worked as a frontend
-            developer specializing in React. Some of the more notable projects I
-            engineered include
-            <a href="https://app.scripturenotes.com/" target="_blank"
-              ><strong>ScriptureNotes</strong></a
-            >
-            study tool (learn more at
-            <a href="https://scripturenotes.com/" target="_blank"
-              ><strong>scripturenotes.com</strong></a
-            >) and
-            <a
-              href="https://map.compliancego.com/site/d5155518-7941-11e9-bb29-02ec26f03c5a"
-              ><strong>ComplianceGo's Map Editor Tool</strong></a
-            >
-            (functionality will be greatly limited as a public user). I also
-            managed development teams for
-            <a href="https://iachievetoday.com" target="_blank"
-              ><strong>IAchieveToday</strong></a
-            >
-            and the
-            <a href="https://www.eventbookingpro.com/" target="_blank"
-              ><strong>EventBookingPro</strong></a
-            >
-            app.
-          </p>
-          <ul class="about-bullets">
-            <li>Correspond with clients with daily updates.</li>
-            <li>
-              Lead weekly standups with task lists and roadmaps, and give
-              directional advice on how to approach complex problems.
-            </li>
-            <li>
-              Keep progress on our weekly goals with end of week reports to
-              share with our clients.
-            </li>
-            <li>
-              Prepare estimates for feature implementations and bug fixes.
-            </li>
-            <li>
-              Organize my teams in a way that play to my team members' strengths
-              while offering room for them to improve upon their weaknesses.
-            </li>
-            <li>
-              I have experience working on UIs and APIs in Django and React.js
-              in Git version control, WordPress, React Native, as well as with
-              working in older legacy code projects using SFTP.
-            </li>
-          </ul>
-
-          <div class="job-img-div">
-            <a href="http://www.brightbridgeweb.com/" target="_blank">
-              <img
-                id="Bright-Bridge-Web"
-                src="./img/BrightBridgeWeb.jpg"
-                alt="Bright Bridge Web"
-              />
-            </a>
-          </div>
         </div>
       </div>
     </main>
